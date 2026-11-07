@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "geometry_schema.json",
+  "title": "Geometry Validation Schema",
+  "description": "Validation schema for records in the geometry tab of the Concrete Grand Challenge Experimental Database submission template.",
+
+  "type": "object",
+  "additionalProperties": false,
+
+  "required": [
+    "geometry_id",
+    "source_id",
+    "specimen_geometry_type",
+    "geometry_file_name"
+  ],
+
+  "properties": {
+
+    "geometry_id": {
+      "type": "string",
+      "description": "Unique geometry identifier.",
+      "pattern": "^GEO[0-9]{4}$",
+      "examples": ["GEO0001"]
+    },
+
+    "source_id": {
+      "type": "string",
+      "description": "Source identifier.",
+      "pattern": "^SRC[0-9]{4}$",
+      "examples": ["SRC0001"]
+    },
+
+    "specimen_geometry_type": {
+      "type": "string",
+      "description": "Geometry type defined in the geometry parametrization library.",
+      "enum": [
+        "prism",
+        "cube",
+        "cylinder",
+        "beam",
+        "notched_beam",
+        "panel",
+        "wall",
+        "plate",
+        "l_shaped",
+        "dog_bone"
+      ]
+    },
+
+    "geometry_file_name": {
+      "type": "string",
+      "description": "CSV or JSON file containing the geometry parameters according to the geometry parametrization library.",
+      "pattern": "^[A-Za-z0-9_\\-]+\\.(csv|json)$",
+      "examples": [
+        "GEO0001_geometry.csv",
+        "GEO0001_geometry.json"
+      ]
+    }
+  }
+}

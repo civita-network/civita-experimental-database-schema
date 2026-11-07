@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "literature_sources_schema.json",
+  "title": "Literature Sources Validation Schema",
+  "description": "Validation schema for records in the literature_sources tab of the Concrete Grand Challenge Experimental Database submission template.",
+  "type": "object",
+  "additionalProperties": false,
+
+  "required": [
+    "source_id",
+    "title",
+    "authors"
+  ],
+
+  "properties": {
+    "source_id": {
+      "type": "string",
+      "description": "Unique identifier of the source document, dataset, report, thesis, or experimental campaign.",
+      "pattern": "^SRC[0-9]{4}$",
+      "examples": ["SRC0001"]
+    },
+
+    "source_type": {
+      "type": "string",
+      "description": "Type of source. Must correspond to an entry in the controlled vocabulary source_types.json.",
+      "enum": [
+        "journal_article",
+        "conference_paper",
+        "book_chapter",
+        "phd_thesis",
+        "report",
+        "dataset",
+        "other"
+      ]
+    },
+
+    "peer_reviewed": {
+      "type": "string",
+      "description": "Indicates whether the source was peer reviewed.",
+      "enum": ["yes", "no", "unknown"]
+    },
+
+    "title": {
+      "type": "string",
+      "description": "Full title of the source.",
+      "minLength": 1
+    },
+
+    "authors": {
+      "type": "string",
+      "description": "Author list as reported in the source. Multiple authors should be comma-separated.",
+      "minLength": 1
+    },
+
+    "year": {
+      "type": "integer",
+      "description": "Publication or release year.",
+      "minimum": 1800,
+      "maximum": 2100
+    },
+
+    "journal_or_publisher": {
+      "type": "string",
+      "description": "Journal name, publisher, report agency, hosting institution, or conference proceedings."
+    },
+
+    "volume": {
+      "type": "string",
+      "description": "Volume number if available."
+    },
+
+    "issue": {
+      "type": "string",
+      "description": "Issue number if available."
+    },
+
+    "pages": {
+      "type": "string",
+      "description": "Page range or article number."
+    },
+
+    "doi": {
+      "type": "string",
+      "description": "Digital Object Identifier.",
+      "pattern": "^$|^10\\.\\d{4,9}/[-._;()/:A-Za-z0-9]+$"
+    },
+
+    "url": {
+      "type": "string",
+      "description": "URL to the source or dataset record.",
+      "format": "uri"
+    },
+
+    "institution": {
+      "type": "string",
+      "description": "Institution associated with a report, thesis, dataset, or experimental campaign."
+    },
+
+    "notes": {
+      "type": "string",
+      "description": "Additional notes useful for identifying the source."
+    }
+  }
+}

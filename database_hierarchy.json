@@ -1,0 +1,174 @@
+{
+    "database_hierarchy": {
+        "literature_sources": {
+            "identifier": "source_id",
+            "format": "SRC0001",
+            "description": "Top-level entity representing one publication, report, thesis, dataset, or experimental campaign.",
+            "children": [
+                "keywords",
+                "material_batches",
+                "geometries",
+                "reinforcement_layouts",
+                "reinforcement_materials",
+                "reinforcement_components",
+                "printing_variables",
+                "specimens",
+                "tests",
+                "devices_and_supports",
+                "loading_histories",
+                "data"
+            ]
+        },
+        "keywords": {
+            "identifier": "keyword",
+            "parent": "source",
+            "relationship": "many_to_one",
+            "description": "Searchable descriptors associated with the source or dataset."
+        },
+        "material_batches": {
+            "identifier": "batch_id",
+            "format": "BAT0001",
+            "parent": "source",
+            "relationship": "many_to_one",
+            "description": "Material mixture, batch, or material system definition.",
+            "children": [
+                "specimens"
+            ]
+        },
+        "geometries": {
+            "identifier": "geometry_id",
+            "format": "GEO0001",
+            "parent": "source",
+            "relationship": "many_to_one",
+            "description": "Reusable specimen geometry definition based on the geometry parametrization library.",
+            "children": [
+                "specimens"
+            ]
+        },
+        "printing_variables": {
+            "identifier": "printing_id",
+            "format": "PRI0001",
+            "parent": "source",
+            "relationship": "many_to_one",
+            "description": "Reusable definition of printing processes.",
+            "children": [
+                "specimens"
+            ]
+        },
+        "reinforcement_materials": {
+            "identifier": "reinforcement_material_id",
+            "format": "RMT0001",
+            "parent": "source",
+            "relationship": "many_to_one",
+            "description": "Reusable definition of properties for reinforcement materials.",
+            "children": [
+                "reinforcement_components"
+            ]
+        },
+        "reinforcement_layouts": {
+            "identifier": "reinforcement_layout_id",
+            "format": "RFL0001",
+            "parents": [
+                "source",
+                "geometries"
+            ],
+            "relationship": "many_to_one",
+            "description": "Reusable definition of a reinforcement layout associated with a specimen geometry. Combines multiple reinforcement components into a complete reinforcement configuration defined with respect to the coordinate system and geometric parametrization of the associated specimen geometry.",
+            "children": [
+                "specimens"
+            ]
+        },
+        "reinforcement_components": {
+            "identifier": "reinforcement_component_id",
+            "format": "REF0001",
+            "parents": [
+                "source",
+                "reinforcement_materials",
+                "reinforcement_layouts"
+            ],
+            "relationship": {
+                "source": "many_to_one",
+                "reinforcement_materials": "many_to_one",
+                "reinforcement_layouts": "many_to_one"
+            },
+            "description": "Reusable definition of reinforcement components. Represents one reinforcement component, e.g., rebar layer, stirrup set, tie set, or external reinforcement system, associated with a reinforcement layout. Combines reinforcement geometrical information and material properties to define one component of a reinforcement layout."
+        },        
+        "specimens": {
+            "identifier": "specimen_id",
+            "format": "SPC0001",
+            "parents": [
+                "source",
+                "material_batches",
+                "geometries",
+                "printing_variables",
+                "reinforcement_layouts"
+            ],
+            "relationship": {
+                "source": "many_to_one",
+                "material_batches": "many_to_one",
+                "geometries": "many_to_one",
+                "printing_variables": "many_to_one_optional",
+                "reinforcement_layouts": "many_to_one_optional"
+            },
+            "description": "Intermediate entity representing a physical specimen or specimen family defined by the combination of material batch, geometry, optional reinforcement, and optional printing variables.",
+            "children": [
+                "tests"
+            ]
+        },
+        "tests": {
+            "identifier": "test_id",
+            "format": "TST0001",
+            "parents": [
+                "source",
+                "specimens"
+            ],
+            "relationship": {
+                "source": "many_to_one",
+                "specimens": "many_to_one"
+            },
+            "description": "Experimental test performed on a specimen.",
+            "children": [
+                "devices_and_supports",
+                "loading_histories",
+                "data"
+            ]
+        },
+        "devices_and_supports": {
+            "identifier": "device_id",
+            "format": "DEV0001",
+            "parent": "tests",
+            "children": [
+                "loading_histories",
+                "data"
+            ],
+            "relationship": "many_to_one",
+            "description": "Support, actuator, sensor, fixture, instrumentation component, or measurement device associated with a test."
+        },
+        "loading_histories": {
+            "identifier": "loading_id",
+            "format": "LDG0001",
+            "parents": [
+                "tests",
+                "devices_and_supports"
+            ],
+            "relationship": {
+                "tests": "many_to_one",
+                "devices_and_supports": "many_to_one_optional"
+            },
+            "description": "Loading protocol or loading time history associated with a test and, when applicable, with a device."
+        },
+        "data": {
+            "identifier": "data_id",
+            "format": "DAT0001",
+            "parents": [
+                "tests",
+                "devices_and_supports"
+            ],
+            "relationship": {
+                "tests": "many_to_one",
+                "devices_and_supports": "many_to_one_optional"
+            },
+            "description": "Experimental observation or dataset, including scalar quantities, curves, tables, images, videos, and multidimensional fields."
+        }
+    }
+}

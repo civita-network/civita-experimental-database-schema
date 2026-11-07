@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "specimens_schema.json",
+  "title": "Specimens Validation Schema",
+  "description": "Validation schema for records in the specimens tab of the Concrete Grand Challenge Experimental Database submission template.",
+
+  "type": "object",
+  "additionalProperties": false,
+
+  "required": [
+    "specimen_id",
+    "source_id",
+    "batch_id",
+    "geometry_id",
+    "longitudinal_reinforcement",
+    "transverse_reinforcement",
+    "external_reinforcement",
+    "printed_specimen"
+  ],
+
+  "properties": {
+
+    "specimen_id": {
+      "type": "string",
+      "description": "Unique specimen identifier.",
+      "pattern": "^SPC[0-9]{4}$",
+      "examples": ["SPC0001"]
+    },
+
+    "source_id": {
+      "type": "string",
+      "description": "Source identifier.",
+      "pattern": "^SRC[0-9]{4}$",
+      "examples": ["SRC0001"]
+    },
+
+    "batch_id": {
+      "type": "string",
+      "description": "Associated material batch identifier.",
+      "pattern": "^BAT[0-9]{4}$",
+      "examples": ["BAT0001"]
+    },
+
+    "geometry_id": {
+      "type": "string",
+      "description": "Geometry identifier referencing an entry in the geometry tab.",
+      "pattern": "^GEO[0-9]{4}$",
+      "examples": ["GEO0001"]
+    },
+
+    "longitudinal_reinforcement": {
+      "type": "string",
+      "description": "Indicates presence of longitudinal reinforcement.",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+
+    "transverse_reinforcement": {
+      "type": "string",
+      "description": "Indicates presence of transverse reinforcement such as stirrups or ties.",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+
+    "external_reinforcement": {
+      "type": "string",
+      "description": "Indicates presence of externally bonded or externally attached reinforcement systems.",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+
+    "printed_specimen": {
+      "type": "string",
+      "description": "Indicates whether the specimen was produced through additive manufacturing.",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+
+    "notes": {
+      "type": "string",
+      "description": "Additional information describing the specimen configuration, reinforcement arrangement, fabrication procedure, or specimen labeling convention."
+    }
+  }
+}

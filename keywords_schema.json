@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "keywords_schema.json",
+  "title": "Keywords Validation Schema",
+  "description": "Validation schema for records in the keywords tab of the Concrete Grand Challenge Experimental Database submission template.",
+
+  "type": "array",
+  "minItems": 5,
+
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+
+    "required": [
+      "source_id",
+      "keyword"
+    ],
+
+    "properties": {
+
+      "source_id": {
+        "type": "string",
+        "description": "Identifier of the source associated with the keyword.",
+        "pattern": "^SRC[0-9]{4}$",
+        "examples": ["SRC0001"]
+      },
+
+      "keyword": {
+        "type": "string",
+        "description": "Searchable keyword describing materials, specimen types, experimental methods, loading conditions, mechanisms, environmental conditions, measurement techniques, or data modalities associated with the dataset.",
+        "minLength": 1,
+        "pattern": "^[A-Za-z0-9_\\- ]+$",
+        "examples": [
+          "three point bending",
+          "chloride diffusion",
+          "carbon fiber reinforced polymer",
+          "reversed cyclic loading"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "material_batches_schema.json",
+  "title": "Material Batches Validation Schema",
+  "description": "Validation schema for records in the material_batches tab of the Concrete Grand Challenge Experimental Database submission template.",
+
+  "type": "object",
+  "additionalProperties": false,
+
+  "required": [
+    "batch_id",
+    "source_id",
+    "material_class",
+    "cement_content_kg_m3",
+    "water_binder_ratio"
+  ],
+
+  "properties": {
+
+    "batch_id": {
+      "type": "string",
+      "description": "Unique identifier for the material batch.",
+      "pattern": "^BAT[0-9]{4}$",
+      "examples": ["BAT0001"]
+    },
+
+    "source_id": {
+      "type": "string",
+      "description": "Source identifier.",
+      "pattern": "^SRC[0-9]{4}$",
+      "examples": ["SRC0001"]
+    },
+
+    "mixing_protocol_file_name": {
+      "type": "string",
+      "description": "Text file describing the mixing, batching, curing, or specimen preparation protocol.",
+      "pattern": "^[A-Za-z0-9_\\-]+\\.(txt|pdf|doc|docx|md)$"
+    },
+
+    "batch_label": {
+      "type": "string",
+      "description": "Label used in the original source."
+    },
+
+    "material_class": {
+      "type": "string",
+      "description": "General material class from the controlled vocabulary."
+    },
+
+    "cement_type": {
+      "type": "string",
+      "description": "Cement classification, designation, or product description."
+    },
+
+    "printable": {
+      "type": "string",
+      "description": "Indicates whether the material is intended for additive manufacturing.",
+      "enum": ["yes", "no"]
+    },
+
+    "self_consolidating": {
+      "type": "string",
+      "description": "Indicates whether the material is self consolidating.",
+      "enum": ["yes", "no"]
+    },
+
+    "cement_content_kg_m3": {
+      "type": "number",
+      "description": "Cement mass per unit concrete volume.",
+      "minimum": 0
+    },
+
+    "water_binder_ratio": {
+      "type": "number",
+      "description": "Ratio of water mass to total binder mass.",
+      "minimum": 0
+    },
+
+    "silica_fume_content_kg_m3": {
+      "type": "number",
+      "minimum": 0
+    },
+
+    "fly_ash_content_kg_m3": {
+      "type": "number",
+      "minimum": 0
+    },
+
+    "fly_ash_class": {
+      "type": "string"
+    },
+
+    "slag_content_kg_m3": {
+      "type": "number",
+      "minimum": 0
+    },
+
+    "fine_aggregate_content_kg_m3": {
+      "type": "number",
+      "minimum": 0
+    },
+
+    "fine_aggregate_dry_density_kg_m3": {
+      "type": "number",
+      "minimum": 0
+    },
+
+    "coarse_aggregate_content_kg_m3": {
+      "type": "number",
+      "minimum": 0
+    },
+
+    "coarse_aggregate_dry_density_kg_m3": {
+      "type": "number",
+      "minimum": 0
+    },
+
+    "max_aggregate_size_mm": {
+      "type": "number",
+      "minimum": 0
+    },
+
+    "aggregate_type": {
+      "type": "string"
+    },
+
+    "superplasticizer_type": {
+      "type": "string"
+    },
+
+    "superplasticizer_content_kg_m3": {
+      "type": "number",
+      "minimum": 0
+    },
+
+    "water_reducer_type": {
+      "type": "string"
+    },
+
+    "water_reducer_content_ml_m3": {
+      "type": "number",
+      "minimum": 0
+    },
+
+    "air_entrainment_type": {
+      "type": "string"
+    },
+
+    "air_entrainment_content_ml_m3": {
+      "type": "number",
+      "minimum": 0
+    },
+
+    "rheology_modifier_type": {
+      "type": "string"
+    },
+
+    "rheology_modifier_content_kg_m3": {
+      "type": "number",
+      "minimum": 0
+    },
+
+    "hydration_accelerator_type": {
+      "type": "string"
+    },
+
+    "hydration_accelerator_content_ml_m3": {
+      "type": "number",
+      "minimum": 0
+    },
+
+    "fiber_type": {
+      "type": "string"
+    },
+
+    "fiber_product_name": {
+      "type": "string"
+    },
+
+    "fiber_volume_fraction": {
+      "type": "number",
+      "minimum": 0
+    },
+
+    "fiber_length_mm": {
+      "type": "number",
+      "minimum": 0
+    },
+
+    "fiber_diameter_mm": {
+      "type": "number",
+      "minimum": 0
+    },
+
+    "air_content_percent_volume_concrete": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+
+    "date_of_pouring_yyyy_mm_dd": {
+      "type": "string",
+      "description": "Casting date in ISO format.",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+
+    "notes": {
+      "type": "string",
+      "description": "Additional information about the mixture, batching procedure, curing protocol, constituent materials, or specimen preparation."
+    }
+  }
+}
