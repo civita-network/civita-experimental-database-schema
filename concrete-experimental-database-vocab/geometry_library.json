@@ -1,0 +1,508 @@
+{
+  "library_name": "geometry_parametrization_library",
+  "version": "1.0",
+  "description": "Standardized geometry parametrization library for the Concrete Grand Challenge Experimental Database. Geometry instance files may be provided in either CSV or JSON format. Each geometry definition includes its own local reference system because the origin and axis interpretation may differ among geometry types.",
+
+  "global_conventions": {
+    "coordinate_system_type": "right_handed_cartesian",
+    "default_length_unit": "mm",
+    "naming_convention": "lowercase_with_underscores",
+
+    "allowed_geometry_instance_file_formats": [
+      "csv",
+      "json"
+    ],
+
+    "internal_database_representation": "During ingestion, both CSV and JSON geometry instance files are converted to a common internal machine-readable representation."
+  },
+
+  "geometry_instance_file_formats": {
+
+    "csv": {
+      "extension": ".csv",
+
+      "recommended_for": "Simple manual submissions and spreadsheet-based workflow.",
+
+      "description": "CSV geometry files contain exactly three logical rows: parameter names, parameter units, and parameter values. The geometry type is specified in the Geometry tab of the data collection spreadsheet.",
+
+      "required_rows": [
+        "parameter_names",
+        "parameter_units",
+        "parameter_values"
+      ],
+
+      "example": {
+        "rows": [
+          "length,thickness,depth",
+          "mm,mm,mm",
+          "500,100,100"
+        ]
+      }
+    },
+
+    "json": {
+      "extension": ".json",
+
+      "recommended_for": "Automated validation, schema enforcement, API workflows, ontology integration, and metadata-rich geometry definitions.",
+
+      "description": "JSON geometry files explicitly store geometry identifiers, source identifiers, geometry type, local reference system, and parameter values with units.",
+
+      "required_top_level_fields": [
+        "geometry_id",
+        "source_id",
+        "geometry_type",
+        "reference_system",
+        "parameters"
+      ],
+
+      "parameter_object_required_fields": [
+        "value",
+        "unit"
+      ],
+
+      "example": {
+
+        "geometry_id": "GEO0001",
+
+        "source_id": "SRC0001",
+
+        "geometry_type": "prism",
+
+        "reference_system": {
+          "origin": "corner point shown in the prism geometry scheme",
+          "x_axis": "length direction",
+          "y_axis": "thickness direction",
+          "z_axis": "depth direction"
+        },
+
+        "parameters": {
+
+          "length": {
+            "value": 500,
+            "unit": "mm"
+          },
+
+          "thickness": {
+            "value": 100,
+            "unit": "mm"
+          },
+
+          "depth": {
+            "value": 100,
+            "unit": "mm"
+          }
+        }
+      }
+    }
+  },
+
+  "geometries": {
+
+    "prism": {
+
+      "display_name": "Prism",
+
+      "description": "Rectangular prismatic specimen.",
+
+      "reference_system": {
+        "origin": "Corner point shown in the prism geometry scheme.",
+        "x_axis": "Longitudinal direction along the prism length.",
+        "y_axis": "Transverse direction along the prism thickness.",
+        "z_axis": "Vertical direction along the prism depth."
+      },
+
+      "parameters": [
+
+        {
+          "name": "length",
+          "required": true,
+          "type": "number",
+          "unit": "mm",
+          "description": "Dimension along the local x direction."
+        },
+
+        {
+          "name": "thickness",
+          "required": true,
+          "type": "number",
+          "unit": "mm",
+          "description": "Dimension along the local y direction."
+        },
+
+        {
+          "name": "depth",
+          "required": true,
+          "type": "number",
+          "unit": "mm",
+          "description": "Dimension along the local z direction."
+        }
+      ]
+    },
+
+    "cube": {
+
+      "display_name": "Cube",
+
+      "description": "Cubic specimen defined by one edge length.",
+
+      "reference_system": {
+        "origin": "Corner point shown in the cube geometry scheme.",
+        "x_axis": "Direction along one cube edge.",
+        "y_axis": "Direction along the second orthogonal cube edge.",
+        "z_axis": "Direction along the third orthogonal cube edge."
+      },
+
+      "parameters": [
+
+        {
+          "name": "length",
+          "required": true,
+          "type": "number",
+          "unit": "mm",
+          "description": "Cube edge length along the local x, y, and z directions."
+        }
+      ]
+    },
+
+    "cylinder": {
+
+      "display_name": "Cylinder",
+
+      "description": "Cylindrical specimen.",
+
+      "reference_system": {
+        "origin": "Reference point shown in the cylinder geometry scheme.",
+        "x_axis": "Cylinder longitudinal axis along the cylinder length.",
+        "y_axis": "First transverse direction in the circular cross section.",
+        "z_axis": "Second transverse direction in the circular cross section.",
+        "notes": "The diameter is measured in the transverse y-z plane."
+      },
+
+      "parameters": [
+
+        {
+          "name": "length",
+          "required": true,
+          "type": "number",
+          "unit": "mm",
+          "description": "Cylinder dimension along the local x direction."
+        },
+
+        {
+          "name": "diameter",
+          "required": true,
+          "type": "number",
+          "unit": "mm",
+          "description": "Diameter of the circular cross section in the local y-z plane."
+        }
+      ]
+    },
+
+"notched_prism": {
+
+  "display_name": "Notched Prism",
+
+  "description": "Rectangular prismatic specimen containing a notch oriented in the local z direction.",
+
+  "reference_system": {
+    "origin": "Midspan point on the specimen centerline shown in the notched-prism geometry scheme.",
+    "x_axis": "Longitudinal direction along the specimen length.",
+    "y_axis": "Transverse direction along the specimen thickness.",
+    "z_axis": "Vertical direction along the specimen depth.",
+    "notch_convention": "The notch is assumed to be oriented in the local z direction. The notch_offset parameter corresponds to the signed x-coordinate of the notch centerline measured from the specimen midspan."
+  },
+
+  "parameters": [
+
+    {
+      "name": "length",
+      "required": true,
+      "type": "number",
+      "unit": "mm",
+      "description": "Dimension along the local x direction."
+    },
+
+    {
+      "name": "thickness",
+      "required": true,
+      "type": "number",
+      "unit": "mm",
+      "description": "Dimension along the local y direction."
+    },
+
+    {
+      "name": "depth",
+      "required": true,
+      "type": "number",
+      "unit": "mm",
+      "description": "Dimension along the local z direction."
+    },
+
+    {
+      "name": "notch_offset",
+      "required": true,
+      "type": "number",
+      "unit": "mm",
+      "description": "Signed x-coordinate of the notch centerline measured from the specimen midspan. A value of 0 indicates a centered notch."
+    },
+
+    {
+      "name": "notch_depth",
+      "required": true,
+      "type": "number",
+      "unit": "mm",
+      "description": "Depth of the notch measured along the local z direction from the notched face into the specimen."
+    },
+
+    {
+      "name": "notch_width",
+      "required": true,
+      "type": "number",
+      "unit": "mm",
+      "description": "Opening width of the notch."
+    },
+
+    {
+      "name": "notch_tip_radius",
+      "required": false,
+      "type": "number",
+      "unit": "mm",
+      "description": "Radius at the notch tip."
+    }
+  ]
+},
+
+    "dogbone": {
+
+      "display_name": "Dogbone",
+
+      "description": "Dogbone specimen with enlarged heads, transition regions, and a reduced central region.",
+
+      "reference_system": {
+        "origin": "Reference point shown in the dogbone geometry scheme.",
+        "x_axis": "Longitudinal direction along the full specimen length.",
+        "y_axis": "In-plane width direction.",
+        "z_axis": "Thickness direction."
+      },
+
+      "parameters": [
+
+        {
+          "name": "length",
+          "required": true,
+          "type": "number",
+          "unit": "mm",
+          "description": "Overall specimen length along the local x direction."
+        },
+
+        {
+          "name": "dogbone_central_width",
+          "required": true,
+          "type": "number",
+          "unit": "mm",
+          "description": "Width of the reduced central region."
+        },
+
+        {
+          "name": "dogbone_central_length",
+          "required": true,
+          "type": "number",
+          "unit": "mm",
+          "description": "Length of the reduced central region."
+        },
+
+        {
+          "name": "dogbone_thickness",
+          "required": true,
+          "type": "number",
+          "unit": "mm",
+          "description": "Specimen thickness along the local z direction."
+        },
+
+        {
+          "name": "dogbone_head_width",
+          "required": true,
+          "type": "number",
+          "unit": "mm",
+          "description": "Width of each enlarged head region."
+        },
+
+        {
+          "name": "dogbone_head_length",
+          "required": true,
+          "type": "number",
+          "unit": "mm",
+          "description": "Length of each enlarged head region."
+        },
+
+        {
+          "name": "dogbone_transition_length",
+          "required": true,
+          "type": "number",
+          "unit": "mm",
+          "description": "Longitudinal length of each transition region."
+        },
+
+        {
+          "name": "dogbone_transition_width",
+          "required": true,
+          "type": "number",
+          "unit": "mm",
+          "description": "Width change associated with each transition region."
+        }
+      ]
+    },
+
+    "ell_shape": {
+
+      "display_name": "Ell Shape",
+
+      "description": "L-shaped specimen represented by two orthogonal legs.",
+
+      "reference_system": {
+        "origin": "Reentrant or reference corner shown in the ell-shape geometry scheme.",
+        "x_axis": "Horizontal leg direction.",
+        "y_axis": "Thickness direction.",
+        "z_axis": "Vertical leg direction."
+      },
+
+      "parameters": [
+
+        {
+          "name": "thickness",
+          "required": true,
+          "type": "number",
+          "unit": "mm",
+          "description": "Specimen thickness along the local y direction."
+        },
+
+        {
+          "name": "ell_length_1",
+          "required": true,
+          "type": "number",
+          "unit": "mm",
+          "description": "Length of the first leg as defined in the geometry scheme."
+        },
+
+        {
+          "name": "ell_depth_1",
+          "required": true,
+          "type": "number",
+          "unit": "mm",
+          "description": "Depth of the first leg as defined in the geometry scheme."
+        },
+
+        {
+          "name": "ell_length_2",
+          "required": true,
+          "type": "number",
+          "unit": "mm",
+          "description": "Length of the second leg as defined in the geometry scheme."
+        },
+
+        {
+          "name": "ell_depth_2",
+          "required": true,
+          "type": "number",
+          "unit": "mm",
+          "description": "Depth of the second leg as defined in the geometry scheme."
+        }
+      ]
+    },
+
+    "notched_cylinder": {
+
+      "display_name": "Notched Cylinder",
+
+      "description": "Cylindrical specimen containing a notch.",
+
+      "reference_system": {
+        "origin": "Reference point shown in the notched-cylinder geometry scheme.",
+        "x_axis": "Cylinder longitudinal axis along the cylinder length.",
+        "y_axis": "First transverse direction in the circular cross section.",
+        "z_axis": "Second transverse direction in the circular cross section.",
+        "notes": "The diameter is measured in the transverse y-z plane. The notch width is measured along the cylinder axis and the notch depth is measured radially."
+      },
+
+      "parameters": [
+
+        {
+          "name": "length",
+          "required": true,
+          "type": "number",
+          "unit": "mm",
+          "description": "Cylinder dimension along the local x direction."
+        },
+
+        {
+          "name": "diameter",
+          "required": true,
+          "type": "number",
+          "unit": "mm",
+          "description": "Diameter of the circular cross section in the local y-z plane."
+        },
+
+        {
+          "name": "notch_depth",
+          "required": true,
+          "type": "number",
+          "unit": "mm",
+          "description": "Radial notch depth."
+        },
+
+        {
+          "name": "notch_width",
+          "required": true,
+          "type": "number",
+          "unit": "mm",
+          "description": "Axial notch width measured along the local x direction."
+        },
+
+        {
+          "name": "notch_tip_radius",
+          "required": false,
+          "type": "number",
+          "unit": "mm",
+          "description": "Radius at the notch tip, when reported."
+        }
+      ]
+    }
+  },
+
+  "validation_rules": {
+
+    "required_geometry_tab_fields": [
+      "geometry_id",
+      "source_id",
+      "specimen_geometry_type",
+      "geometry_file_name"
+    ],
+
+    "allowed_geometry_types": [
+      "prism",
+      "cube",
+      "cylinder",
+      "notched_prism",
+      "dogbone",
+      "ell_shape",
+      "notched_cylinder"
+    ],
+
+    "allowed_geometry_instance_file_extensions": [
+      ".csv",
+      ".json"
+    ],
+
+    "numeric_parameters": "All geometry parameters must be numeric unless explicitly defined otherwise.",
+
+    "positive_dimensions": "All dimensions must be positive. Offset parameters may be zero or signed when defined by the geometry-specific reference system.",
+
+    "reference_system_required": "Each geometry definition must include its own local reference system.",
+
+    "csv_validation": "For CSV files, the geometry type is read from the Geometry tab and parameter names are validated against the corresponding geometry definition in this library.",
+
+    "json_validation": "For JSON files, geometry_id, source_id, geometry_type, reference_system, and parameters are validated against the corresponding geometry definition in this library.",
+
+    "unit_consistency": "Units in geometry instance files must match the units specified in this library unless explicitly documented."
+  }
+}

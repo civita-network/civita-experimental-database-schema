@@ -1,0 +1,51 @@
+{
+  "vocabulary_name": "superplasticizer_types",
+  "version": "1.0",
+  "description": "Controlled vocabulary defining superplasticizer types used in the material_batches tab of the Concrete Grand Challenge Experimental Database.",
+  "field_name": "superplasticizer_type",
+  "naming_convention": "lowercase_underscore_separated",
+  "entries": [
+    {
+      "term": "superplasticizer_unspecified",
+      "display_name": "Superplasticizer Unspecified",
+      "definition": "Superplasticizer reported without a specific chemical classification or product type.",
+      "category": "superplasticizer"
+    },
+    {
+      "term": "melamine_sulfonate",
+      "display_name": "Melamine Sulfonate",
+      "definition": "Superplasticizer based on sulfonated melamine formaldehyde or related melamine-sulfonate chemistry.",
+      "category": "superplasticizer"
+    },
+    {
+      "term": "naphthalene_sulfonate",
+      "display_name": "Naphthalene Sulfonate",
+      "definition": "Superplasticizer based on sulfonated naphthalene formaldehyde or related naphthalene-sulfonate chemistry.",
+      "category": "superplasticizer"
+    },
+    {
+      "term": "polycarboxylate_ether",
+      "display_name": "Polycarboxylate Ether",
+      "definition": "Superplasticizer based on polycarboxylate ether chemistry.",
+      "category": "superplasticizer"
+    },
+    {
+      "term": "polycarboxylate_modified",
+      "display_name": "Polycarboxylate Modified",
+      "definition": "Modified polycarboxylate-based superplasticizer or related polycarboxylate derivative.",
+      "category": "superplasticizer"
+    },
+    {
+      "term": "other",
+      "display_name": "Other",
+      "definition": "Superplasticizer type that does not fall within the predefined categories.",
+      "category": "other"
+    },
+    {
+      "term": "unknown",
+      "display_name": "Unknown",
+      "definition": "Superplasticizer type not reported or not identifiable from the available documentation.",
+      "category": "other"
+    }
+  ]
+}

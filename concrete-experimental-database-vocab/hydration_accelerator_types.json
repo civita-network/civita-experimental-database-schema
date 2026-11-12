@@ -1,0 +1,93 @@
+{
+  "vocabulary_name": "hydration_accelerator_types",
+  "version": "1.0",
+  "description": "Controlled vocabulary defining hydration accelerator types used in the material_batches tab of the Concrete Grand Challenge Experimental Database.",
+  "field_name": "hydration_accelerator_type",
+  "naming_convention": "lowercase_underscore_separated",
+  "entries": [
+    {
+      "term": "calcium_nitrate",
+      "display_name": "Calcium Nitrate",
+      "definition": "Hydration-accelerating admixture based on calcium nitrate.",
+      "category": "hydration_accelerator"
+    },
+    {
+      "term": "calcium_formate",
+      "display_name": "Calcium Formate",
+      "definition": "Hydration-accelerating admixture based on calcium formate.",
+      "category": "hydration_accelerator"
+    },
+    {
+      "term": "triethanolamine",
+      "display_name": "Triethanolamine",
+      "definition": "Hydration-accelerating admixture based on triethanolamine.",
+      "category": "hydration_accelerator"
+    },
+    {
+      "term": "sodium_thiocyanate",
+      "display_name": "Sodium Thiocyanate",
+      "definition": "Hydration-accelerating admixture based on sodium thiocyanate.",
+      "category": "hydration_accelerator"
+    },
+    {
+      "term": "sodium_nitrate",
+      "display_name": "Sodium Nitrate",
+      "definition": "Hydration-accelerating admixture based on sodium nitrate.",
+      "category": "hydration_accelerator"
+    },
+    {
+      "term": "aluminate_based",
+      "display_name": "Aluminate Based",
+      "definition": "Hydration-accelerating admixture based primarily on aluminate compounds.",
+      "category": "hydration_accelerator"
+    },
+    {
+      "term": "silicate_based",
+      "display_name": "Silicate Based",
+      "definition": "Hydration-accelerating admixture based primarily on silicate compounds.",
+      "category": "hydration_accelerator"
+    },
+    {
+      "term": "carbonate_based",
+      "display_name": "Carbonate Based",
+      "definition": "Hydration-accelerating admixture based primarily on carbonate compounds.",
+      "category": "hydration_accelerator"
+    },
+    {
+      "term": "alkali_based",
+      "display_name": "Alkali Based",
+      "definition": "Hydration-accelerating admixture based primarily on alkali compounds.",
+      "category": "hydration_accelerator"
+    },
+    {
+      "term": "shotcrete_accelerator",
+      "display_name": "Shotcrete Accelerator",
+      "definition": "Accelerating admixture formulated for shotcrete applications.",
+      "category": "hydration_accelerator"
+    },
+    {
+      "term": "set_accelerating_admixture",
+      "display_name": "Set Accelerating Admixture",
+      "definition": "Admixture intended primarily to accelerate setting of cementitious mixtures.",
+      "category": "hydration_accelerator"
+    },
+    {
+      "term": "hardening_accelerating_admixture",
+      "display_name": "Hardening Accelerating Admixture",
+      "definition": "Admixture intended primarily to accelerate early-age strength development or hardening.",
+      "category": "hydration_accelerator"
+    },
+    {
+      "term": "other",
+      "display_name": "Other",
+      "definition": "Hydration accelerator type that does not fall within the predefined categories.",
+      "category": "other"
+    },
+    {
+      "term": "unknown",
+      "display_name": "Unknown",
+      "definition": "Hydration accelerator type not reported or not identifiable from the available documentation.",
+      "category": "other"
+    }
+  ]
+}

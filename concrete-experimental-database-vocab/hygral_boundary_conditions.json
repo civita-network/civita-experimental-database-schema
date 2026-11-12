@@ -1,0 +1,32 @@
+{
+  "vocabulary_name": "hygral_boundary_conditions",
+  "version": "1.0",
+  "description": "Controlled vocabulary defining hygral boundary conditions used to describe the environmental exposure state of specimens during testing.",
+  "applicable_fields": [
+    "hygral_boundary_condition"
+  ],
+  "naming_convention": "lowercase_underscore_separated",
+  "terms": [
+    {
+      "term": "sealed",
+      "definition": "Boundary condition preventing moisture exchange with the surrounding environment.",
+      "applicable_to": [
+        "hygral_boundary_condition"
+      ]
+    },
+    {
+      "term": "unsealed",
+      "definition": "Boundary condition allowing moisture exchange with the surrounding environment.",
+      "applicable_to": [
+        "hygral_boundary_condition"
+      ]
+    },
+    {
+      "term": "unknown",
+      "definition": "Boundary condition not reported or not identifiable from the available documentation.",
+      "applicable_to": [
+        "hygral_boundary_condition"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "vocabulary_name": "rheology_modifier_types",
+  "version": "1.0",
+  "description": "Controlled vocabulary defining rheology modifier types used in the material_batches tab of the Concrete Grand Challenge Experimental Database.",
+  "field_name": "rheology_modifier_type",
+  "naming_convention": "lowercase_underscore_separated",
+  "entries": [
+    {
+      "term": "welan_gum",
+      "display_name": "Welan Gum",
+      "definition": "Rheology-modifying admixture based on welan gum.",
+      "category": "rheology_modifier"
+    },
+    {
+      "term": "xanthan_gum",
+      "display_name": "Xanthan Gum",
+      "definition": "Rheology-modifying admixture based on xanthan gum.",
+      "category": "rheology_modifier"
+    },
+    {
+      "term": "starch_based",
+      "display_name": "Starch Based",
+      "definition": "Rheology-modifying admixture based on starch or starch derivatives.",
+      "category": "rheology_modifier"
+    },
+    {
+      "term": "silica_based",
+      "display_name": "Silica Based",
+      "definition": "Rheology-modifying admixture based on silica or silica-bearing constituents.",
+      "category": "rheology_modifier"
+    },
+    {
+      "term": "nanoclay_based",
+      "display_name": "Nanoclay Based",
+      "definition": "Rheology-modifying admixture based on nanoclay particles.",
+      "category": "rheology_modifier"
+    },
+    {
+      "term": "attapulgite_clay",
+      "display_name": "Attapulgite Clay",
+      "definition": "Rheology-modifying admixture based on attapulgite clay.",
+      "category": "rheology_modifier"
+    },
+    {
+      "term": "bentonite_based",
+      "display_name": "Bentonite Based",
+      "definition": "Rheology-modifying admixture based on bentonite or bentonite-derived clay.",
+      "category": "rheology_modifier"
+    },
+    {
+      "term": "biopolymer_based",
+      "display_name": "Biopolymer Based",
+      "definition": "Rheology-modifying admixture based on natural or biologically derived polymers.",
+      "category": "rheology_modifier"
+    },
+    {
+      "term": "synthetic_polymer_based",
+      "display_name": "Synthetic Polymer Based",
+      "definition": "Rheology-modifying admixture based on synthetic polymers.",
+      "category": "rheology_modifier"
+    },
+    {
+      "term": "polyacrylamide_based",
+      "display_name": "Polyacrylamide Based",
+      "definition": "Rheology-modifying admixture based on polyacrylamide or related polymers.",
+      "category": "rheology_modifier"
+    },
+    {
+      "term": "diutan_gum",
+      "display_name": "Diutan Gum",
+      "definition": "Rheology-modifying admixture based on diutan gum.",
+      "category": "rheology_modifier"
+    },
+    {
+      "term": "other",
+      "display_name": "Other",
+      "definition": "Rheology modifier type that does not fall within the predefined categories.",
+      "category": "other"
+    },
+    {
+      "term": "unknown",
+      "display_name": "Unknown",
+      "definition": "Rheology modifier type not reported or not identifiable from the available documentation.",
+      "category": "other"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "vocabulary_name": "aggregate_types",
+  "version": "1.0",
+  "description": "Controlled vocabulary defining aggregate types used in the material_batches tab of the Concrete Grand Challenge Experimental Database.",
+  "field_name": "aggregate_type",
+  "naming_convention": "lowercase_underscore_separated",
+  "entries": [
+    {
+      "term": "basalt",
+      "display_name": "Basalt",
+      "definition": "Aggregate primarily composed of basaltic rock.",
+      "category": "aggregate"
+    },
+    {
+      "term": "calcareous",
+      "display_name": "Calcareous",
+      "definition": "Aggregate primarily composed of calcium-carbonate-bearing rock or calcareous material.",
+      "category": "aggregate"
+    },
+    {
+      "term": "dolomite",
+      "display_name": "Dolomite",
+      "definition": "Aggregate primarily composed of dolomite or dolomitic rock.",
+      "category": "aggregate"
+    },
+    {
+      "term": "granite",
+      "display_name": "Granite",
+      "definition": "Aggregate primarily composed of granite or granitic rock.",
+      "category": "aggregate"
+    },
+    {
+      "term": "gravel_crushed",
+      "display_name": "Crushed Gravel",
+      "definition": "Crushed gravel aggregate produced by mechanical crushing of gravel particles.",
+      "category": "aggregate"
+    },
+    {
+      "term": "gravel_natural",
+      "display_name": "Natural Gravel",
+      "definition": "Natural gravel aggregate obtained from natural deposits without crushing as the primary processing step.",
+      "category": "aggregate"
+    },
+    {
+      "term": "limestone",
+      "display_name": "Limestone",
+      "definition": "Aggregate primarily composed of limestone.",
+      "category": "aggregate"
+    },
+    {
+      "term": "lightweight_expanded_clay",
+      "display_name": "Lightweight Expanded Clay",
+      "definition": "Lightweight aggregate produced from expanded clay.",
+      "category": "aggregate"
+    },
+    {
+      "term": "lightweight_pumice",
+      "display_name": "Lightweight Pumice",
+      "definition": "Lightweight aggregate based on pumice.",
+      "category": "aggregate"
+    },
+    {
+      "term": "lightweight_shale",
+      "display_name": "Lightweight Shale",
+      "definition": "Lightweight aggregate produced from expanded or processed shale.",
+      "category": "aggregate"
+    },
+    {
+      "term": "lightweight_slate",
+      "display_name": "Lightweight Slate",
+      "definition": "Lightweight aggregate produced from expanded or processed slate.",
+      "category": "aggregate"
+    },
+    {
+      "term": "manufactured_sand",
+      "display_name": "Manufactured Sand",
+      "definition": "Fine aggregate produced by mechanical crushing or industrial processing.",
+      "category": "aggregate"
+    },
+    {
+      "term": "natural_sand",
+      "display_name": "Natural Sand",
+      "definition": "Natural fine aggregate obtained from natural sand deposits.",
+      "category": "aggregate"
+    },
+    {
+      "term": "quartzite",
+      "display_name": "Quartzite",
+      "definition": "Aggregate primarily composed of quartzite.",
+      "category": "aggregate"
+    },
+    {
+      "term": "recycled_concrete",
+      "display_name": "Recycled Concrete",
+      "definition": "Aggregate produced from crushed recycled concrete.",
+      "category": "aggregate"
+    },
+    {
+      "term": "recycled_masonry",
+      "display_name": "Recycled Masonry",
+      "definition": "Aggregate produced from crushed recycled masonry materials.",
+      "category": "aggregate"
+    },
+    {
+      "term": "river_gravel",
+      "display_name": "River Gravel",
+      "definition": "Rounded or subrounded gravel aggregate obtained from river or alluvial deposits.",
+      "category": "aggregate"
+    },
+    {
+      "term": "sandstone",
+      "display_name": "Sandstone",
+      "definition": "Aggregate primarily composed of sandstone.",
+      "category": "aggregate"
+    },
+    {
+      "term": "siliceous",
+      "display_name": "Siliceous",
+      "definition": "Aggregate primarily composed of silica-rich or siliceous material.",
+      "category": "aggregate"
+    },
+    {
+      "term": "slag",
+      "display_name": "Slag",
+      "definition": "Aggregate produced from metallurgical slag.",
+      "category": "aggregate"
+    },
+    {
+      "term": "other",
+      "display_name": "Other",
+      "definition": "Aggregate type that does not fall within the predefined categories.",
+      "category": "other"
+    },
+    {
+      "term": "unknown",
+      "display_name": "Unknown",
+      "definition": "Aggregate type not reported or not identifiable from the available documentation.",
+      "category": "other"
+    }
+  ]
+}

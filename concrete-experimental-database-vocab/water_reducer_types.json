@@ -1,0 +1,51 @@
+{
+  "vocabulary_name": "water_reducer_types",
+  "version": "1.0",
+  "description": "Controlled vocabulary defining water reducer types used in the material_batches tab of the Concrete Grand Challenge Experimental Database.",
+  "field_name": "water_reducer_type",
+  "naming_convention": "lowercase_underscore_separated",
+  "entries": [
+    {
+      "term": "set_retarding_water_reducer",
+      "display_name": "Set Retarding Water Reducer",
+      "definition": "Water-reducing admixture with set-retarding effects.",
+      "category": "water_reducing_admixture"
+    },
+    {
+      "term": "set_accelerating_water_reducer",
+      "display_name": "Set Accelerating Water Reducer",
+      "definition": "Water-reducing admixture with set-accelerating effects.",
+      "category": "water_reducing_admixture"
+    },
+    {
+      "term": "lignosulfonate",
+      "display_name": "Lignosulfonate",
+      "definition": "Water-reducing admixture based on lignosulfonates.",
+      "category": "water_reducing_admixture"
+    },
+    {
+      "term": "hydroxycarboxylic_acid",
+      "display_name": "Hydroxycarboxylic Acid",
+      "definition": "Water-reducing admixture based on hydroxycarboxylic acids or related compounds.",
+      "category": "water_reducing_admixture"
+    },
+    {
+      "term": "carbohydrate_based",
+      "display_name": "Carbohydrate Based",
+      "definition": "Water-reducing admixture based on carbohydrates or carbohydrate derivatives.",
+      "category": "water_reducing_admixture"
+    },
+    {
+      "term": "other",
+      "display_name": "Other",
+      "definition": "Water reducer type that does not fall within the predefined categories.",
+      "category": "other"
+    },
+    {
+      "term": "unknown",
+      "display_name": "Unknown",
+      "definition": "Water reducer type not reported or not identifiable from the available documentation.",
+      "category": "other"
+    }
+  ]
+}

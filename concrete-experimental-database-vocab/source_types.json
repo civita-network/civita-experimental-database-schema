@@ -1,0 +1,35 @@
+{
+  "category": "source_type",
+  "version": "1.0",
+  "description": "Controlled vocabulary defining the type of literature source or dataset from which the experimental data originate.",
+  "terms": [
+    {
+      "term": "book_chapter",
+      "definition": "A chapter published within an edited book or proceedings volume."
+    },
+    {
+      "term": "conference_paper",
+      "definition": "A paper published in conference proceedings or presented at a scientific or engineering conference."
+    },
+    {
+      "term": "dataset",
+      "definition": "A standalone curated dataset, database, or data repository entry."
+    },
+    {
+      "term": "journal_article",
+      "definition": "An article published in a scientific, technical, or professional journal."
+    },
+    {
+      "term": "phd_thesis",
+      "definition": "A doctoral dissertation or PhD thesis submitted as part of a doctoral degree program."
+    },
+    {
+      "term": "report",
+      "definition": "A technical, institutional, governmental, industrial, or research report."
+    },
+    {
+      "term": "other",
+      "definition": "A source type that does not fall within the predefined categories."
+    }
+  ]
+}

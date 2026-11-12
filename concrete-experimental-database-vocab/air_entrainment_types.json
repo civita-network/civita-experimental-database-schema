@@ -1,0 +1,57 @@
+{
+  "vocabulary_name": "air_entrainment_types",
+  "version": "1.0",
+  "description": "Controlled vocabulary defining air-entraining admixture types used in the material_batches tab of the Concrete Grand Challenge Experimental Database.",
+  "field_name": "air_entrainment_type",
+  "naming_convention": "lowercase_underscore_separated",
+  "entries": [
+    {
+      "term": "wood_resin",
+      "display_name": "Wood Resin",
+      "definition": "Air-entraining admixture based on wood resin or wood-resin derivatives.",
+      "category": "air_entraining_admixture"
+    },
+    {
+      "term": "fatty_acid_based",
+      "display_name": "Fatty Acid Based",
+      "definition": "Air-entraining admixture based on fatty acids or fatty-acid derivatives.",
+      "category": "air_entraining_admixture"
+    },
+    {
+      "term": "sulfated_hydrocarbon",
+      "display_name": "Sulfated Hydrocarbon",
+      "definition": "Air-entraining admixture based on sulfated hydrocarbons.",
+      "category": "air_entraining_admixture"
+    },
+    {
+      "term": "protein_based",
+      "display_name": "Protein Based",
+      "definition": "Air-entraining admixture based on proteinaceous compounds.",
+      "category": "air_entraining_admixture"
+    },
+    {
+      "term": "natural_resin",
+      "display_name": "Natural Resin",
+      "definition": "Air-entraining admixture based on natural resins.",
+      "category": "air_entraining_admixture"
+    },
+    {
+      "term": "surfactant_based",
+      "display_name": "Surfactant Based",
+      "definition": "Air-entraining admixture based on surfactants or surface-active agents.",
+      "category": "air_entraining_admixture"
+    },
+    {
+      "term": "other",
+      "display_name": "Other",
+      "definition": "Air-entraining admixture type that does not fall within the predefined categories.",
+      "category": "other"
+    },
+    {
+      "term": "unknown",
+      "display_name": "Unknown",
+      "definition": "Air-entraining admixture type not reported or not identifiable from the available documentation.",
+      "category": "other"
+    }
+  ]
+}

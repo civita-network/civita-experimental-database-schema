@@ -1,0 +1,388 @@
+{
+  "vocabulary_name": "test_types",
+  "version": "1.0",
+  "description": "Controlled vocabulary defining experimental test types and standardized testing procedures used in the tests tab of the Concrete Grand Challenge Experimental Database.",
+  "field_name": "test_type",
+  "naming_convention": "lowercase_underscore_separated",
+  "entries": [
+    {
+      "term": "accelerated_carbonation_test",
+      "display_name": "Accelerated Carbonation Test",
+      "definition": "Test evaluating carbonation penetration under accelerated environmental exposure conditions.",
+      "category": "generic_test"
+    },
+    {
+      "term": "axial_test",
+      "display_name": "Axial Test",
+      "definition": "General axial loading test performed under uniaxial compression or tension conditions.",
+      "category": "generic_test"
+    },
+    {
+      "term": "biaxial_compression_test",
+      "display_name": "Biaxial Compression Test",
+      "definition": "Test involving biaxial compressive stress states applied to a specimen.",
+      "category": "generic_test"
+    },
+    {
+      "term": "blast_test",
+      "display_name": "Blast Test",
+      "definition": "Experimental test evaluating structural or material response under blast loading conditions.",
+      "category": "generic_test"
+    },
+    {
+      "term": "chloride_profile_grinding",
+      "display_name": "Chloride Profile Grinding",
+      "definition": "Test involving grinding and chemical analysis to determine chloride penetration profiles.",
+      "category": "generic_test"
+    },
+    {
+      "term": "concrete_pullout_bond_test",
+      "display_name": "Concrete Pullout Bond Test",
+      "definition": "Test evaluating bond behavior between concrete and embedded reinforcement through pullout loading.",
+      "category": "generic_test"
+    },
+    {
+      "term": "corrosion_damaged_beam_test",
+      "display_name": "Corrosion Damaged Beam Test",
+      "definition": "Structural beam test performed on specimens affected by reinforcement corrosion.",
+      "category": "generic_test"
+    },
+    {
+      "term": "creep_axial_compression_test",
+      "display_name": "Creep Axial Compression Test",
+      "definition": "Long-term axial compression test evaluating creep deformation behavior.",
+      "category": "generic_test"
+    },
+    {
+      "term": "creep_bending_test",
+      "display_name": "Creep Bending Test",
+      "definition": "Long-term flexural loading test evaluating creep behavior under bending.",
+      "category": "generic_test"
+    },
+    {
+      "term": "cyclic_lateral_test",
+      "display_name": "Cyclic Lateral Test",
+      "definition": "Test involving cyclic lateral loading typically used for structural or seismic investigations.",
+      "category": "generic_test"
+    },
+    {
+      "term": "direct_tensile_test",
+      "display_name": "Direct Tensile Test",
+      "definition": "Test evaluating tensile response under direct uniaxial tension.",
+      "category": "generic_test"
+    },
+    {
+      "term": "double_punch_test",
+      "display_name": "Double Punch Test",
+      "definition": "Compression-based punching test commonly used to estimate tensile or fracture properties.",
+      "category": "generic_test"
+    },
+    {
+      "term": "drop_weight_impact_test",
+      "display_name": "Drop Weight Impact Test",
+      "definition": "Impact test performed using a falling mass or drop-weight loading configuration.",
+      "category": "generic_test"
+    },
+    {
+      "term": "eccentric_axial_compression_test",
+      "display_name": "Eccentric Axial Compression Test",
+      "definition": "Axial compression test performed with eccentric loading producing combined compression and bending.",
+      "category": "generic_test"
+    },
+    {
+      "term": "electrical_resistivity_test",
+      "display_name": "Electrical Resistivity Test",
+      "definition": "Test measuring the electrical resistivity of cementitious materials or concrete.",
+      "category": "generic_test"
+    },
+    {
+      "term": "four_point_bending_test",
+      "display_name": "Four Point Bending Test",
+      "definition": "Flexural test performed using two loading points producing a constant moment region.",
+      "category": "generic_test"
+    },
+    {
+      "term": "gas_permeability_test",
+      "display_name": "Gas Permeability Test",
+      "definition": "Test measuring gas permeability of porous materials.",
+      "category": "generic_test"
+    },
+    {
+      "term": "heat_of_hydration_test",
+      "display_name": "Heat of Hydration Test",
+      "definition": "Test measuring the heat released during cement hydration.",
+      "category": "generic_test"
+    },
+    {
+      "term": "length_change_test",
+      "display_name": "Length Change Test",
+      "definition": "Test evaluating shrinkage, swelling, or thermal length change behavior.",
+      "category": "generic_test"
+    },
+    {
+      "term": "mini_slump_test",
+      "display_name": "Mini Slump Test",
+      "definition": "Reduced-scale slump-flow test commonly used for paste or mortar characterization.",
+      "category": "generic_test"
+    },
+    {
+      "term": "modulus_of_rupture_test",
+      "display_name": "Modulus of Rupture Test",
+      "definition": "Flexural test used to determine modulus of rupture or flexural tensile strength.",
+      "category": "generic_test"
+    },
+    {
+      "term": "punching_shear_test",
+      "display_name": "Punching Shear Test",
+      "definition": "Structural test evaluating punching shear resistance.",
+      "category": "generic_test"
+    },
+    {
+      "term": "rebound_number_test",
+      "display_name": "Rebound Number Test",
+      "definition": "Surface hardness test based on rebound hammer measurements.",
+      "category": "generic_test"
+    },
+    {
+      "term": "rotational_rheometry_test",
+      "display_name": "Rotational Rheometry Test",
+      "definition": "Rheological characterization using rotational rheometry equipment.",
+      "category": "generic_test"
+    },
+    {
+      "term": "scaling_resistance_test",
+      "display_name": "Scaling Resistance Test",
+      "definition": "Durability test evaluating resistance to surface scaling.",
+      "category": "generic_test"
+    },
+    {
+      "term": "shear_friction_test",
+      "display_name": "Shear Friction Test",
+      "definition": "Test evaluating shear friction resistance across interfaces or cracks.",
+      "category": "generic_test"
+    },
+    {
+      "term": "slump_flow_test",
+      "display_name": "Slump Flow Test",
+      "definition": "Workability test evaluating slump flow spread.",
+      "category": "generic_test"
+    },
+    {
+      "term": "slump_test",
+      "display_name": "Slump Test",
+      "definition": "Workability test measuring conventional slump.",
+      "category": "generic_test"
+    },
+    {
+      "term": "splitting_tensile_test",
+      "display_name": "Splitting Tensile Test",
+      "definition": "Indirect tensile test performed by diametral compression loading.",
+      "category": "generic_test"
+    },
+    {
+      "term": "surface_resistivity_test",
+      "display_name": "Surface Resistivity Test",
+      "definition": "Test measuring surface electrical resistivity.",
+      "category": "generic_test"
+    },
+    {
+      "term": "thermal_diffusivity_test",
+      "display_name": "Thermal Diffusivity Test",
+      "definition": "Test measuring thermal diffusivity properties.",
+      "category": "generic_test"
+    },
+    {
+      "term": "three_point_bending_test",
+      "display_name": "Three Point Bending Test",
+      "definition": "Flexural test performed using a single central loading point.",
+      "category": "generic_test"
+    },
+    {
+      "term": "time_of_setting_test",
+      "display_name": "Time of Setting Test",
+      "definition": "Test evaluating initial and final setting times.",
+      "category": "generic_test"
+    },
+    {
+      "term": "torsion_test",
+      "display_name": "Torsion Test",
+      "definition": "Test evaluating response under torsional loading.",
+      "category": "generic_test"
+    },
+    {
+      "term": "triaxial_test",
+      "display_name": "Triaxial Test",
+      "definition": "Test performed under triaxial stress conditions.",
+      "category": "generic_test"
+    },
+    {
+      "term": "true_triaxial_test",
+      "display_name": "True Triaxial Test",
+      "definition": "Test performed under independently controlled three-dimensional stress states.",
+      "category": "generic_test"
+    },
+    {
+      "term": "ultrasonic_pulse_velocity_test",
+      "display_name": "Ultrasonic Pulse Velocity Test",
+      "definition": "Non-destructive test measuring ultrasonic pulse velocity.",
+      "category": "generic_test"
+    },
+    {
+      "term": "v_funnel_test",
+      "display_name": "V Funnel Test",
+      "definition": "Workability test evaluating flow time through a V-funnel apparatus.",
+      "category": "generic_test"
+    },
+    {
+      "term": "water_penetration_test",
+      "display_name": "Water Penetration Test",
+      "definition": "Durability test evaluating water penetration resistance.",
+      "category": "generic_test"
+    },
+    {
+      "term": "wedge_splitting_test",
+      "display_name": "Wedge Splitting Test",
+      "definition": "Fracture mechanics test performed using wedge-induced splitting loading.",
+      "category": "generic_test"
+    },
+    {
+      "term": "ASTM_C39/C39M",
+      "display_name": "ASTM C39/C39M",
+      "definition": "ASTM compressive strength test for cylindrical concrete specimens.",
+      "category": "standardized_test",
+      "organization": "ASTM"
+    },
+    {
+      "term": "ASTM_C78/C78M",
+      "display_name": "ASTM C78/C78M",
+      "definition": "ASTM third-point loading flexural strength test.",
+      "category": "standardized_test",
+      "organization": "ASTM"
+    },
+    {
+      "term": "ASTM_C1202",
+      "display_name": "ASTM C1202",
+      "definition": "ASTM rapid chloride permeability test procedure.",
+      "category": "standardized_test",
+      "organization": "ASTM"
+    },
+    {
+      "term": "ASTM_C143/C143M",
+      "display_name": "ASTM C143/C143M",
+      "definition": "ASTM standard slump test for hydraulic-cement concrete.",
+      "category": "standardized_test",
+      "organization": "ASTM"
+    },
+    {
+      "term": "ASTM_C496/C496M",
+      "display_name": "ASTM C496/C496M",
+      "definition": "ASTM splitting tensile strength test for cylindrical concrete specimens.",
+      "category": "standardized_test",
+      "organization": "ASTM"
+    },
+    {
+      "term": "ASTM_C597",
+      "display_name": "ASTM C597",
+      "definition": "ASTM ultrasonic pulse velocity test method.",
+      "category": "standardized_test",
+      "organization": "ASTM"
+    },
+    {
+      "term": "ASTM_C805/C805M",
+      "display_name": "ASTM C805/C805M",
+      "definition": "ASTM rebound hammer test method.",
+      "category": "standardized_test",
+      "organization": "ASTM"
+    },
+    {
+      "term": "ASTM_C1585",
+      "display_name": "ASTM C1585",
+      "definition": "ASTM test method for measurement of rate of absorption of water by hydraulic-cement concretes.",
+      "category": "standardized_test",
+      "organization": "ASTM"
+    },
+    {
+      "term": "ASTM_C1611/C1611M",
+      "display_name": "ASTM C1611/C1611M",
+      "definition": "ASTM slump-flow test for self-consolidating concrete.",
+      "category": "standardized_test",
+      "organization": "ASTM"
+    },
+    {
+      "term": "EN_12350-2",
+      "display_name": "EN 12350-2",
+      "definition": "EN slump test procedure for fresh concrete.",
+      "category": "standardized_test",
+      "organization": "EN"
+    },
+    {
+      "term": "EN_12350-8",
+      "display_name": "EN 12350-8",
+      "definition": "EN slump-flow test for self-compacting concrete.",
+      "category": "standardized_test",
+      "organization": "EN"
+    },
+    {
+      "term": "EN_12390-3",
+      "display_name": "EN 12390-3",
+      "definition": "EN compressive strength test for hardened concrete specimens.",
+      "category": "standardized_test",
+      "organization": "EN"
+    },
+    {
+      "term": "EN_12390-6",
+      "display_name": "EN 12390-6",
+      "definition": "EN splitting tensile strength test.",
+      "category": "standardized_test",
+      "organization": "EN"
+    },
+    {
+      "term": "EN_14651",
+      "display_name": "EN 14651",
+      "definition": "EN flexural tensile test for fiber-reinforced concrete.",
+      "category": "standardized_test",
+      "organization": "EN"
+    },
+    {
+      "term": "AASHTO_T325",
+      "display_name": "AASHTO T325",
+      "definition": "AASHTO standard procedure for estimating concrete strength using maturity methods.",
+      "category": "standardized_test",
+      "organization": "AASHTO"
+    },
+    {
+      "term": "AASHTO_T336",
+      "display_name": "AASHTO T336",
+      "definition": "AASHTO standard test method for coefficient of thermal expansion of hydraulic cement concrete.",
+      "category": "standardized_test",
+      "organization": "AASHTO"
+    },
+    {
+      "term": "NT_Build_492",
+      "display_name": "NT Build 492",
+      "definition": "NT Build migration test for chloride penetration resistance.",
+      "category": "standardized_test",
+      "organization": "NT Build"
+    },
+    {
+      "term": "RILEM_RC6",
+      "display_name": "RILEM RC6",
+      "definition": "RILEM pull-out bond test for reinforcement-concrete interaction.",
+      "category": "standardized_test",
+      "organization": "RILEM"
+    },
+    {
+      "term": "USACE_CRD-C36",
+      "display_name": "USACE CRD-C36",
+      "definition": "USACE test procedure for thermal diffusivity measurements.",
+      "category": "standardized_test",
+      "organization": "USACE"
+    },
+    {
+      "term": "other",
+      "display_name": "Other",
+      "definition": "Test type that does not fall within the predefined categories.",
+      "category": "other"
+    }
+  ]
+}

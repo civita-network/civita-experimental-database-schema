@@ -1,0 +1,105 @@
+{
+  "vocabulary_name": "curing_conditions",
+  "version": "1.0",
+  "description": "Controlled vocabulary defining curing conditions used in the Concrete Grand Challenge Experimental Database.",
+  "field_name": "curing_condition",
+  "naming_convention": "lowercase_underscore_separated",
+  "entries": [
+    {
+      "term": "air_curing",
+      "display_name": "Air Curing",
+      "definition": "Curing performed by exposing specimens to ambient air conditions.",
+      "category": "curing_condition"
+    },
+    {
+      "term": "autoclave_curing",
+      "display_name": "Autoclave Curing",
+      "definition": "Curing performed under elevated temperature and pressure in an autoclave.",
+      "category": "curing_condition"
+    },
+    {
+      "term": "controlled_environment",
+      "display_name": "Controlled Environment",
+      "definition": "Curing performed under controlled temperature, humidity, or environmental conditions.",
+      "category": "curing_condition"
+    },
+    {
+      "term": "field_curing",
+      "display_name": "Field Curing",
+      "definition": "Curing performed under field or in-situ exposure conditions.",
+      "category": "curing_condition"
+    },
+    {
+      "term": "fog_room",
+      "display_name": "Fog Room",
+      "definition": "Curing performed in a fog room or high-humidity moist-curing chamber.",
+      "category": "curing_condition"
+    },
+    {
+      "term": "heat_curing",
+      "display_name": "Heat Curing",
+      "definition": "Curing performed with externally applied heat or elevated temperature.",
+      "category": "curing_condition"
+    },
+    {
+      "term": "laboratory_air",
+      "display_name": "Laboratory Air",
+      "definition": "Curing performed in laboratory air under reported or unreported ambient laboratory conditions.",
+      "category": "curing_condition"
+    },
+    {
+      "term": "lime_saturated_water",
+      "display_name": "Lime Saturated Water",
+      "definition": "Curing performed by immersion in lime-saturated water.",
+      "category": "curing_condition"
+    },
+    {
+      "term": "membrane_curing",
+      "display_name": "Membrane Curing",
+      "definition": "Curing performed using a curing membrane or curing compound to limit moisture loss.",
+      "category": "curing_condition"
+    },
+    {
+      "term": "no_curing",
+      "display_name": "No Curing",
+      "definition": "No explicit curing procedure was applied.",
+      "category": "curing_condition"
+    },
+    {
+      "term": "sealed_curing",
+      "display_name": "Sealed Curing",
+      "definition": "Curing performed under sealed conditions to prevent or reduce moisture exchange with the environment.",
+      "category": "curing_condition"
+    },
+    {
+      "term": "standard_moist_curing",
+      "display_name": "Standard Moist Curing",
+      "definition": "Curing performed under standard moist-curing conditions, as defined by the relevant testing standard or experimental protocol.",
+      "category": "curing_condition"
+    },
+    {
+      "term": "steam_curing",
+      "display_name": "Steam Curing",
+      "definition": "Curing performed using steam or a steam-curing chamber.",
+      "category": "curing_condition"
+    },
+    {
+      "term": "water_curing",
+      "display_name": "Water Curing",
+      "definition": "Curing performed by immersion in water or continuous exposure to water.",
+      "category": "curing_condition"
+    },
+    {
+      "term": "other",
+      "display_name": "Other",
+      "definition": "Curing condition that does not fall within the predefined categories.",
+      "category": "other"
+    },
+    {
+      "term": "unknown",
+      "display_name": "Unknown",
+      "definition": "Curing condition not reported or not identifiable from the available documentation.",
+      "category": "other"
+    }
+  ]
+}

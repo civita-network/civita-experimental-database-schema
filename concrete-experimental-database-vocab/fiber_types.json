@@ -1,0 +1,93 @@
+{
+  "vocabulary_name": "fiber_types",
+  "version": "1.0",
+  "description": "Controlled vocabulary defining fiber types used in the material_batches tab of the Concrete Grand Challenge Experimental Database.",
+  "field_name": "fiber_type",
+  "naming_convention": "lowercase_underscore_separated",
+  "entries": [
+    {
+      "term": "glass",
+      "display_name": "Glass",
+      "definition": "Fiber reinforcement composed of glass fibers.",
+      "category": "fiber"
+    },
+    {
+      "term": "natural",
+      "display_name": "Natural",
+      "definition": "Fiber reinforcement composed of natural fibers such as plant-, mineral-, or animal-derived fibers.",
+      "category": "fiber"
+    },
+    {
+      "term": "polyethylene",
+      "display_name": "Polyethylene",
+      "definition": "Fiber reinforcement composed of polyethylene fibers.",
+      "category": "fiber"
+    },
+    {
+      "term": "polypropylene_macro",
+      "display_name": "Polypropylene Macro",
+      "definition": "Macrofiber reinforcement composed of polypropylene fibers.",
+      "category": "fiber"
+    },
+    {
+      "term": "polypropylene_micro",
+      "display_name": "Polypropylene Micro",
+      "definition": "Microfiber reinforcement composed of polypropylene fibers.",
+      "category": "fiber"
+    },
+    {
+      "term": "polyvinyl_alcohol",
+      "display_name": "Polyvinyl Alcohol",
+      "definition": "Fiber reinforcement composed of polyvinyl alcohol fibers.",
+      "category": "fiber"
+    },
+    {
+      "term": "recycled_polymer",
+      "display_name": "Recycled Polymer",
+      "definition": "Fiber reinforcement composed of recycled polymeric materials.",
+      "category": "fiber"
+    },
+    {
+      "term": "steel_crimped",
+      "display_name": "Steel Crimped",
+      "definition": "Steel fiber reinforcement with crimped geometry.",
+      "category": "fiber"
+    },
+    {
+      "term": "steel_hooked",
+      "display_name": "Steel Hooked",
+      "definition": "Steel fiber reinforcement with hooked ends.",
+      "category": "fiber"
+    },
+    {
+      "term": "steel_hybrid",
+      "display_name": "Steel Hybrid",
+      "definition": "Hybrid steel fiber reinforcement, typically involving more than one steel fiber geometry, size, or type.",
+      "category": "fiber"
+    },
+    {
+      "term": "steel_straight",
+      "display_name": "Steel Straight",
+      "definition": "Steel fiber reinforcement with straight geometry.",
+      "category": "fiber"
+    },
+    {
+      "term": "steel_twisted",
+      "display_name": "Steel Twisted",
+      "definition": "Steel fiber reinforcement with twisted geometry.",
+      "category": "fiber"
+    },
+    {
+      "term": "other",
+      "display_name": "Other",
+      "definition": "Fiber type that does not fall within the predefined categories.",
+      "category": "other"
+    },
+    {
+      "term": "unknown",
+      "display_name": "Unknown",
+      "definition": "Fiber type not reported or not identifiable from the available documentation.",
+      "category": "other"
+    }
+  ]
+}

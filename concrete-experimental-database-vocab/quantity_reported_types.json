@@ -1,0 +1,24 @@
+{
+  "vocabulary_name": "quantity_reported",
+  "version": "1.0",
+  "description": "Controlled vocabulary defining whether a reported quantity corresponds to raw experimentally measured data or to quantities obtained through post-processing or interpretation.",
+  "field_name": "quantity_reported",
+  "naming_convention": "lowercase_underscore_separated",
+  "terms": [
+    {
+      "term": "derived",
+      "definition": "Quantity obtained through post-processing, analytical calculations, inverse analysis, homogenization, curve fitting, numerical interpretation, statistical processing, or other forms of data reduction applied to experimentally measured data.",
+      "category": "processed_data"
+    },
+    {
+      "term": "raw",
+      "definition": "Quantity corresponding directly to experimentally measured or recorded data without substantial post-processing or interpretation.",
+      "category": "experimental_data"
+    },
+    {
+      "term": "unknown",
+      "definition": "Reporting type not specified or not identifiable from the available documentation.",
+      "category": "other"
+    }
+  ]
+}

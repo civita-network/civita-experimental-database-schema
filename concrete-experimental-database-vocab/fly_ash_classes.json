@@ -1,0 +1,45 @@
+{
+    "vocabulary_name": "fly_ash_classes",
+    "version": "1.0",
+    "description": "Controlled vocabulary defining fly ash class designations used in the material_batches tab of the Concrete Grand Challenge Experimental Database.",
+    "field_name": "fly_ash_class",
+    "naming_convention": "standard_designation_underscore_separated",
+    "entries": [
+        {
+            "term": "ASTM_C618_Class_F",
+            "display_name": "ASTM C618 Class F",
+            "definition": "Low-calcium fly ash classified according to ASTM C618, typically produced from anthracite or bituminous coal and characterized primarily by pozzolanic behavior.",
+            "category": "ASTM_C618_fly_ash"
+        },
+        {
+            "term": "ASTM_C618_Class_C",
+            "display_name": "ASTM C618 Class C",
+            "definition": "High-calcium fly ash classified according to ASTM C618, typically produced from lignite or subbituminous coal and characterized by pozzolanic and, in some cases, cementitious behavior.",
+            "category": "ASTM_C618_fly_ash"
+        },
+        {
+            "term": "EN450_Siliceous_Fly_Ash",
+            "display_name": "EN 450 Siliceous Fly Ash",
+            "definition": "Fly ash conforming to EN 450 terminology and consisting predominantly of reactive silica and alumina.",
+            "category": "EN450_fly_ash"
+        },
+        {
+            "term": "EN450_Calcareous_Fly_Ash",
+            "display_name": "EN 450 Calcareous Fly Ash",
+            "definition": "Fly ash conforming to EN 450 terminology and containing a significant proportion of reactive calcium oxide.",
+            "category": "EN450_fly_ash"
+        },
+        {
+            "term": "other",
+            "display_name": "Other",
+            "definition": "Fly ash class that does not fall within the predefined categories.",
+            "category": "other"
+        },
+        {
+            "term": "unknown",
+            "display_name": "Unknown",
+            "definition": "Fly ash class not reported or not identifiable from the available documentation.",
+            "category": "other"
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+  "vocabulary_name": "data_types",
+  "version": "1.0",
+  "description": "Controlled vocabulary defining the primary format and dimensionality of experimental data entries used in the data tab of the Concrete Grand Challenge Experimental Database.",
+  "field_name": "data_type",
+  "naming_convention": "lowercase_underscore_separated",
+  "terms": [
+    {
+      "term": "2D_field",
+      "definition": "Two-dimensional spatially distributed dataset such as displacement fields, strain fields, temperature fields, moisture fields, or DIC measurements defined over a planar domain.",
+      "category": "field_data",
+      "dimensionality": "2D"
+    },
+    {
+      "term": "3D_field",
+      "definition": "Three-dimensional spatially distributed dataset such as voxel data, tomography reconstructions, volumetric temperature fields, moisture fields, or other volumetric measurements.",
+      "category": "field_data",
+      "dimensionality": "3D"
+    },
+    {
+      "term": "curve",
+      "definition": "One-dimensional dataset describing the relationship between two or more variables, typically represented as ordered numerical pairs or time histories.",
+      "category": "numerical_data",
+      "dimensionality": "1D"
+    },
+    {
+      "term": "image",
+      "definition": "Static visual dataset such as photographs, microscopy images, crack maps, thermal images, DIC visualizations, or experimental setup illustrations.",
+      "category": "visual_data",
+      "dimensionality": "2D"
+    },
+    {
+      "term": "scalar",
+      "definition": "Single numerical quantity or statistically aggregated value associated with a specimen, test, or material property.",
+      "category": "numerical_data",
+      "dimensionality": "0D"
+    },
+    {
+      "term": "table",
+      "definition": "Tabulated multidimensional dataset containing multiple quantities organized in rows and columns.",
+      "category": "tabular_data",
+      "dimensionality": "multiple"
+    },
+    {
+      "term": "video",
+      "definition": "Time-dependent visual dataset documenting experiments, crack propagation, deformation processes, failure evolution, or other dynamic phenomena.",
+      "category": "visual_data",
+      "dimensionality": "time_dependent"
+    },
+    {
+      "term": "other",
+      "definition": "Data type that does not fall within the predefined categories.",
+      "category": "other",
+      "dimensionality": "unknown"
+    }
+  ]
+}

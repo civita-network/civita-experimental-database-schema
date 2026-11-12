@@ -1,0 +1,489 @@
+{
+  "vocabulary_name": "observed_mechanisms",
+  "version": "1.0",
+  "description": "Controlled vocabulary defining observed mechanisms used in the tests tab of the Concrete Grand Challenge Experimental Database.",
+  "field_name": "main_observed_mechanisms",
+  "naming_convention": "category_pipe_lowercase_underscore_separated_term",
+  "entries": [
+    {
+      "term": "bond | bond_slip_and_debonding",
+      "display_name": "Bond | Bond Slip And Debonding",
+      "category": "bond"
+    },
+    {
+      "term": "bond | steel_concrete_interaction",
+      "display_name": "Bond | Steel Concrete Interaction",
+      "category": "bond"
+    },
+    {
+      "term": "chemical | degree_of_reaction",
+      "display_name": "Chemical | Degree Of Reaction",
+      "category": "chemical"
+    },
+    {
+      "term": "chemical | ion_concentration",
+      "display_name": "Chemical | Ion Concentration",
+      "category": "chemical"
+    },
+    {
+      "term": "chemical | mass_loss",
+      "display_name": "Chemical | Mass Loss",
+      "category": "chemical"
+    },
+    {
+      "term": "chemical | material_reactivity",
+      "display_name": "Chemical | Material Reactivity",
+      "category": "chemical"
+    },
+    {
+      "term": "chemical | microstructure_morphology",
+      "display_name": "Chemical | Microstructure Morphology",
+      "category": "chemical"
+    },
+    {
+      "term": "chemical | phase_assemblage",
+      "display_name": "Chemical | Phase Assemblage",
+      "category": "chemical"
+    },
+    {
+      "term": "chemical | pore_structure",
+      "display_name": "Chemical | Pore Structure",
+      "category": "chemical"
+    },
+    {
+      "term": "durability | alkali_silica_reaction",
+      "display_name": "Durability | Alkali Silica Reaction",
+      "category": "durability"
+    },
+    {
+      "term": "durability | carbonation",
+      "display_name": "Durability | Carbonation",
+      "category": "durability"
+    },
+    {
+      "term": "durability | carbonation_depth",
+      "display_name": "Durability | Carbonation Depth",
+      "category": "durability"
+    },
+    {
+      "term": "durability | chloride_content",
+      "display_name": "Durability | Chloride Content",
+      "category": "durability"
+    },
+    {
+      "term": "durability | chloride_penetration",
+      "display_name": "Durability | Chloride Penetration",
+      "category": "durability"
+    },
+    {
+      "term": "durability | corrosion_current",
+      "display_name": "Durability | Corrosion Current",
+      "category": "durability"
+    },
+    {
+      "term": "durability | corrosion_probability",
+      "display_name": "Durability | Corrosion Probability",
+      "category": "durability"
+    },
+    {
+      "term": "durability | freeze_thaw_damage",
+      "display_name": "Durability | Freeze Thaw Damage",
+      "category": "durability"
+    },
+    {
+      "term": "durability | length_change_expansion",
+      "display_name": "Durability | Length Change Expansion",
+      "category": "durability"
+    },
+    {
+      "term": "durability | mass_loss",
+      "display_name": "Durability | Mass Loss",
+      "category": "durability"
+    },
+    {
+      "term": "durability | permeability",
+      "display_name": "Durability | Permeability",
+      "category": "durability"
+    },
+    {
+      "term": "durability | pore_structure_evolution",
+      "display_name": "Durability | Pore Structure Evolution",
+      "category": "durability"
+    },
+    {
+      "term": "durability | sulfate_attack_expansion",
+      "display_name": "Durability | Sulfate Attack Expansion",
+      "category": "durability"
+    },
+    {
+      "term": "elastic | linear_elasticity",
+      "display_name": "Elastic | Linear Elasticity",
+      "category": "elastic"
+    },
+    {
+      "term": "fiber | fiber_bridging_and_pull_out_resistance",
+      "display_name": "Fiber | Fiber Bridging And Pull Out Resistance",
+      "category": "fiber"
+    },
+    {
+      "term": "fiber | post_cracking_residual_strength",
+      "display_name": "Fiber | Post Cracking Residual Strength",
+      "category": "fiber"
+    },
+    {
+      "term": "fracture | fracture_energy_dissipation",
+      "display_name": "Fracture | Fracture Energy Dissipation",
+      "category": "fracture"
+    },
+    {
+      "term": "fracture | fracture_propagation",
+      "display_name": "Fracture | Fracture Propagation",
+      "category": "fracture"
+    },
+    {
+      "term": "fracture | mixed_mode_dilatancy",
+      "display_name": "Fracture | Mixed Mode Dilatancy",
+      "category": "fracture"
+    },
+    {
+      "term": "fracture | mode_I",
+      "display_name": "Fracture | Mode I",
+      "category": "fracture"
+    },
+    {
+      "term": "fracture | mode_II",
+      "display_name": "Fracture | Mode II",
+      "category": "fracture"
+    },
+    {
+      "term": "fracture | mode_III",
+      "display_name": "Fracture | Mode III",
+      "category": "fracture"
+    },
+    {
+      "term": "fracture | parallel_stress_effect",
+      "display_name": "Fracture | Parallel Stress Effect",
+      "category": "fracture"
+    },
+    {
+      "term": "fracture | initiation",
+      "display_name": "Fracture | Initiation",
+      "category": "fracture"
+    },
+    {
+      "term": "fresh | air_entrainment",
+      "display_name": "Fresh | Air Entrainment",
+      "category": "fresh"
+    },
+    {
+      "term": "fresh | density_and_consistency",
+      "display_name": "Fresh | Density And Consistency",
+      "category": "fresh"
+    },
+    {
+      "term": "fresh | rheology_evolution",
+      "display_name": "Fresh | Rheology Evolution",
+      "category": "fresh"
+    },
+    {
+      "term": "fresh | segregation_and_stability",
+      "display_name": "Fresh | Segregation And Stability",
+      "category": "fresh"
+    },
+    {
+      "term": "fresh | setting",
+      "display_name": "Fresh | Setting",
+      "category": "fresh"
+    },
+    {
+      "term": "fresh | setting_and_early_age_stiffening",
+      "display_name": "Fresh | Setting And Early Age Stiffening",
+      "category": "fresh"
+    },
+    {
+      "term": "fresh | spread_diameter",
+      "display_name": "Fresh | Spread Diameter",
+      "category": "fresh"
+    },
+    {
+      "term": "fresh | workability",
+      "display_name": "Fresh | Workability",
+      "category": "fresh"
+    },
+    {
+      "term": "fresh | rheology",
+      "display_name": "Fresh | Rheology",
+      "category": "fresh"
+    },
+    {
+      "term": "frp | bond",
+      "display_name": "FRP | Bond",
+      "category": "frp"
+    },
+    {
+      "term": "ndt | surface_hardness_rebound_response",
+      "display_name": "NDT | Surface Hardness Rebound Response",
+      "category": "ndt"
+    },
+    {
+      "term": "ndt | wave_propagation_velocity",
+      "display_name": "NDT | Wave Propagation Velocity",
+      "category": "ndt"
+    },
+    {
+      "term": "stiffness | bending_stiffness",
+      "display_name": "Stiffness | Bending Stiffness",
+      "category": "stiffness"
+    },
+    {
+      "term": "stiffness | crack_width",
+      "display_name": "Stiffness | Crack Width",
+      "category": "stiffness"
+    },
+    {
+      "term": "stiffness | dynamic_response",
+      "display_name": "Stiffness | Dynamic Response",
+      "category": "stiffness"
+    },
+    {
+      "term": "stiffness | natural_frequency",
+      "display_name": "Stiffness | Natural Frequency",
+      "category": "stiffness"
+    },
+    {
+      "term": "stiffness | tension_stiffening",
+      "display_name": "Stiffness | Tension Stiffening",
+      "category": "stiffness"
+    },
+    {
+      "term": "stiffness | time_dependent_deflection",
+      "display_name": "Stiffness | Time Dependent Deflection",
+      "category": "stiffness"
+    },
+    {
+      "term": "stiffness | time_dependent_strain",
+      "display_name": "Stiffness | Time Dependent Strain",
+      "category": "stiffness"
+    },
+    {
+      "term": "strength | aggregate_interlock",
+      "display_name": "Strength | Aggregate Interlock",
+      "category": "strength"
+    },
+    {
+      "term": "strength | axial_capacity",
+      "display_name": "Strength | Axial Capacity",
+      "category": "strength"
+    },
+    {
+      "term": "strength | bending_capacity",
+      "display_name": "Strength | Bending Capacity",
+      "category": "strength"
+    },
+    {
+      "term": "strength | biaxial_failure",
+      "display_name": "Strength | Biaxial Failure",
+      "category": "strength"
+    },
+    {
+      "term": "strength | bond_slip",
+      "display_name": "Strength | Bond Slip",
+      "category": "strength"
+    },
+    {
+      "term": "strength | cohesion_adhesion",
+      "display_name": "Strength | Cohesion Adhesion",
+      "category": "strength"
+    },
+    {
+      "term": "strength | compressive_strain_hardening",
+      "display_name": "Strength | Compressive Strain Hardening",
+      "category": "strength"
+    },
+    {
+      "term": "strength | concrete_cone_breakout",
+      "display_name": "Strength | Concrete Cone Breakout",
+      "category": "strength"
+    },
+    {
+      "term": "strength | concrete_cone_failure",
+      "display_name": "Strength | Concrete Cone Failure",
+      "category": "strength"
+    },
+    {
+      "term": "strength | creep_buckling",
+      "display_name": "Strength | Creep Buckling",
+      "category": "strength"
+    },
+    {
+      "term": "strength | dowel_action",
+      "display_name": "Strength | Dowel Action",
+      "category": "strength"
+    },
+    {
+      "term": "strength | ductility",
+      "display_name": "Strength | Ductility",
+      "category": "strength"
+    },
+    {
+      "term": "strength | energy_dissipation",
+      "display_name": "Strength | Energy Dissipation",
+      "category": "strength"
+    },
+    {
+      "term": "strength | failure_mode",
+      "display_name": "Strength | Failure Mode",
+      "category": "strength"
+    },
+    {
+      "term": "strength | impact_resistance",
+      "display_name": "Strength | Impact Resistance",
+      "category": "strength"
+    },
+    {
+      "term": "strength | shear_fracture",
+      "display_name": "Strength | Shear Fracture",
+      "category": "strength"
+    },
+    {
+      "term": "strength | multiaxial_failure",
+      "display_name": "Strength | Multiaxial Failure",
+      "category": "strength"
+    },
+    {
+      "term": "strength | pozzolan_reactivity",
+      "display_name": "Strength | Pozzolan Reactivity",
+      "category": "strength"
+    },
+    {
+      "term": "strength | seismic_response",
+      "display_name": "Strength | Seismic Response",
+      "category": "strength"
+    },
+    {
+      "term": "strength | shear_friction",
+      "display_name": "Strength | Shear Friction",
+      "category": "strength"
+    },
+    {
+      "term": "strength | slag_reactivity",
+      "display_name": "Strength | Slag Reactivity",
+      "category": "strength"
+    },
+    {
+      "term": "strength | slab_column_connection_failure",
+      "display_name": "Strength | Slab Column Connection Failure",
+      "category": "strength"
+    },
+    {
+      "term": "strength | crushing_failure",
+      "display_name": "Strength | Crushing Failure",
+      "category": "strength"
+    },
+    {
+      "term": "strength | tensile_failure",
+      "display_name": "Strength | Tensile Failure",
+      "category": "strength"
+    },
+    {
+      "term": "strength | tensile_strength",
+      "display_name": "Strength | Tensile Strength",
+      "category": "strength"
+    },
+    {
+      "term": "strength | torsion_capacity",
+      "display_name": "Strength | Torsion Capacity",
+      "category": "strength"
+    },
+    {
+      "term": "strength | unconfined_compressive_failure",
+      "display_name": "Strength | Unconfined Compressive Failure",
+      "category": "strength"
+    },
+    {
+      "term": "strength | vertex_effect",
+      "display_name": "Strength | Vertex Effect",
+      "category": "strength"
+    },
+    {
+      "term": "thermal | adiabatic_temperature_rise",
+      "display_name": "Thermal | Adiabatic Temperature Rise",
+      "category": "thermal"
+    },
+    {
+      "term": "thermal | heat_capacity",
+      "display_name": "Thermal | Heat Capacity",
+      "category": "thermal"
+    },
+    {
+      "term": "thermal | heat_evolution",
+      "display_name": "Thermal | Heat Evolution",
+      "category": "thermal"
+    },
+    {
+      "term": "thermal | linear_thermal_expansion",
+      "display_name": "Thermal | Linear Thermal Expansion",
+      "category": "thermal"
+    },
+    {
+      "term": "thermal | thermal_diffusivity",
+      "display_name": "Thermal | Thermal Diffusivity",
+      "category": "thermal"
+    },
+    {
+      "term": "time_dependent | autogenous_shrinkage",
+      "display_name": "Time Dependent | Autogenous Shrinkage",
+      "category": "time_dependent"
+    },
+    {
+      "term": "time_dependent | creep",
+      "display_name": "Time Dependent | Creep",
+      "category": "time_dependent"
+    },
+    {
+      "term": "time_dependent | drying_shrinkage",
+      "display_name": "Time Dependent | Drying Shrinkage",
+      "category": "time_dependent"
+    },
+    {
+      "term": "time_dependent | maturity",
+      "display_name": "Time Dependent | Maturity",
+      "category": "time_dependent"
+    },
+    {
+      "term": "transport | absorption_and_porosity",
+      "display_name": "Transport | Absorption And Porosity",
+      "category": "transport"
+    },
+    {
+      "term": "transport | chloride_diffusion",
+      "display_name": "Transport | Chloride Diffusion",
+      "category": "transport"
+    },
+    {
+      "term": "transport | electrical_resistivity",
+      "display_name": "Transport | Electrical Resistivity",
+      "category": "transport"
+    },
+    {
+      "term": "transport | gas_permeability",
+      "display_name": "Transport | Gas Permeability",
+      "category": "transport"
+    },
+    {
+      "term": "transport | sorptivity",
+      "display_name": "Transport | Sorptivity",
+      "category": "transport"
+    },
+    {
+      "term": "transport | water_permeability",
+      "display_name": "Transport | Water Permeability",
+      "category": "transport"
+    },
+    {
+      "term": "other",
+      "display_name": "Other",
+      "category": "other"
+    }
+  ]
+}

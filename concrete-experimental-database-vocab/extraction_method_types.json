@@ -1,0 +1,34 @@
+{
+  "vocabulary_name": "extraction_method",
+  "version": "1.0",
+  "description": "Controlled vocabulary defining the method used to extract or obtain data from original source materials.",
+  "field_name": "extraction_method",
+  "naming_convention": "lowercase_and_hyphen_separated",
+  "terms": [
+    {
+      "term": "AI-assisted",
+      "definition": "Data extracted or interpreted using artificial intelligence tools, machine learning methods, large language models, computer vision systems, or AI-assisted workflows with subsequent human verification.",
+      "category": "ai_assisted_extraction"
+    },
+    {
+      "term": "computed",
+      "definition": "Data obtained through analytical calculations, numerical processing, statistical analysis, inverse analysis, or other computational procedures applied to available information.",
+      "category": "computational_extraction"
+    },
+    {
+      "term": "digitized",
+      "definition": "Data extracted through manual or automated digitization of plots, graphs, images, or scanned documents.",
+      "category": "digitization"
+    },
+    {
+      "term": "direct",
+      "definition": "Data transcribed directly from tables, appendices, supplementary materials, spreadsheets, or explicitly reported numerical values in the original source.",
+      "category": "direct_extraction"
+    },
+    {
+      "term": "unknown",
+      "definition": "Extraction method not reported or not identifiable from the available documentation.",
+      "category": "other"
+    }
+  ]
+}

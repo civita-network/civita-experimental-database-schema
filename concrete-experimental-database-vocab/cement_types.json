@@ -1,0 +1,249 @@
+{
+  "vocabulary_name": "cement_types",
+  "version": "1.0",
+  "description": "Controlled vocabulary defining cement type designations used in the material_batches tab of the Concrete Grand Challenge Experimental Database.",
+  "field_name": "cement_type",
+  "naming_convention": "standard_designation_underscore_separated",
+  "entries": [
+    {
+      "term": "ASTM_C1157_Type_GU",
+      "display_name": "ASTM C1157 Type GU",
+      "definition": "Cement type designation defined according to ASTM C1157 performance-based hydraulic cement classification: ASTM_C1157_Type_GU.",
+      "category": "ASTM_C1157_performance_cement"
+    },
+    {
+      "term": "ASTM_C1157_Type_HE",
+      "display_name": "ASTM C1157 Type HE",
+      "definition": "Cement type designation defined according to ASTM C1157 performance-based hydraulic cement classification: ASTM_C1157_Type_HE.",
+      "category": "ASTM_C1157_performance_cement"
+    },
+    {
+      "term": "ASTM_C1157_Type_HS",
+      "display_name": "ASTM C1157 Type HS",
+      "definition": "Cement type designation defined according to ASTM C1157 performance-based hydraulic cement classification: ASTM_C1157_Type_HS.",
+      "category": "ASTM_C1157_performance_cement"
+    },
+    {
+      "term": "ASTM_C1157_Type_LH",
+      "display_name": "ASTM C1157 Type LH",
+      "definition": "Cement type designation defined according to ASTM C1157 performance-based hydraulic cement classification: ASTM_C1157_Type_LH.",
+      "category": "ASTM_C1157_performance_cement"
+    },
+    {
+      "term": "ASTM_C1157_Type_MH",
+      "display_name": "ASTM C1157 Type MH",
+      "definition": "Cement type designation defined according to ASTM C1157 performance-based hydraulic cement classification: ASTM_C1157_Type_MH.",
+      "category": "ASTM_C1157_performance_cement"
+    },
+    {
+      "term": "ASTM_C1157_Type_MS",
+      "display_name": "ASTM C1157 Type MS",
+      "definition": "Cement type designation defined according to ASTM C1157 performance-based hydraulic cement classification: ASTM_C1157_Type_MS.",
+      "category": "ASTM_C1157_performance_cement"
+    },
+    {
+      "term": "ASTM_C150_Type_I",
+      "display_name": "ASTM C150 Type I",
+      "definition": "Portland cement type designation defined according to ASTM C150: ASTM_C150_Type_I.",
+      "category": "ASTM_C150_portland_cement"
+    },
+    {
+      "term": "ASTM_C150_Type_II",
+      "display_name": "ASTM C150 Type II",
+      "definition": "Portland cement type designation defined according to ASTM C150: ASTM_C150_Type_II.",
+      "category": "ASTM_C150_portland_cement"
+    },
+    {
+      "term": "ASTM_C150_Type_III",
+      "display_name": "ASTM C150 Type III",
+      "definition": "Portland cement type designation defined according to ASTM C150: ASTM_C150_Type_III.",
+      "category": "ASTM_C150_portland_cement"
+    },
+    {
+      "term": "ASTM_C150_Type_IV",
+      "display_name": "ASTM C150 Type IV",
+      "definition": "Portland cement type designation defined according to ASTM C150: ASTM_C150_Type_IV.",
+      "category": "ASTM_C150_portland_cement"
+    },
+    {
+      "term": "ASTM_C150_Type_V",
+      "display_name": "ASTM C150 Type V",
+      "definition": "Portland cement type designation defined according to ASTM C150: ASTM_C150_Type_V.",
+      "category": "ASTM_C150_portland_cement"
+    },
+    {
+      "term": "ASTM_C595_Type_IL",
+      "display_name": "ASTM C595 Type IL",
+      "definition": "Blended hydraulic cement type designation defined according to ASTM C595: ASTM_C595_Type_IL.",
+      "category": "ASTM_C595_blended_cement"
+    },
+    {
+      "term": "ASTM_C595_Type_IL_HE",
+      "display_name": "ASTM C595 Type IL HE",
+      "definition": "Blended hydraulic cement type designation defined according to ASTM C595: ASTM_C595_Type_IL_HE.",
+      "category": "ASTM_C595_blended_cement"
+    },
+    {
+      "term": "ASTM_C595_Type_IL_HS",
+      "display_name": "ASTM C595 Type IL HS",
+      "definition": "Blended hydraulic cement type designation defined according to ASTM C595: ASTM_C595_Type_IL_HS.",
+      "category": "ASTM_C595_blended_cement"
+    },
+    {
+      "term": "ASTM_C595_Type_IL_MS",
+      "display_name": "ASTM C595 Type IL MS",
+      "definition": "Blended hydraulic cement type designation defined according to ASTM C595: ASTM_C595_Type_IL_MS.",
+      "category": "ASTM_C595_blended_cement"
+    },
+    {
+      "term": "ASTM_C595_Type_IP",
+      "display_name": "ASTM C595 Type IP",
+      "definition": "Blended hydraulic cement type designation defined according to ASTM C595: ASTM_C595_Type_IP.",
+      "category": "ASTM_C595_blended_cement"
+    },
+    {
+      "term": "ASTM_C595_Type_IP_HE",
+      "display_name": "ASTM C595 Type IP HE",
+      "definition": "Blended hydraulic cement type designation defined according to ASTM C595: ASTM_C595_Type_IP_HE.",
+      "category": "ASTM_C595_blended_cement"
+    },
+    {
+      "term": "ASTM_C595_Type_IP_HS",
+      "display_name": "ASTM C595 Type IP HS",
+      "definition": "Blended hydraulic cement type designation defined according to ASTM C595: ASTM_C595_Type_IP_HS.",
+      "category": "ASTM_C595_blended_cement"
+    },
+    {
+      "term": "ASTM_C595_Type_IP_MS",
+      "display_name": "ASTM C595 Type IP MS",
+      "definition": "Blended hydraulic cement type designation defined according to ASTM C595: ASTM_C595_Type_IP_MS.",
+      "category": "ASTM_C595_blended_cement"
+    },
+    {
+      "term": "ASTM_C595_Type_IS_LS70_HS",
+      "display_name": "ASTM C595 Type IS LS70 HS",
+      "definition": "Blended hydraulic cement type designation defined according to ASTM C595: ASTM_C595_Type_IS_LS70_HS.",
+      "category": "ASTM_C595_blended_cement"
+    },
+    {
+      "term": "ASTM_C595_Type_IS_LT70",
+      "display_name": "ASTM C595 Type IS LT70",
+      "definition": "Blended hydraulic cement type designation defined according to ASTM C595: ASTM_C595_Type_IS_LT70.",
+      "category": "ASTM_C595_blended_cement"
+    },
+    {
+      "term": "ASTM_C595_Type_IS_LT70_HE",
+      "display_name": "ASTM C595 Type IS LT70 HE",
+      "definition": "Blended hydraulic cement type designation defined according to ASTM C595: ASTM_C595_Type_IS_LT70_HE.",
+      "category": "ASTM_C595_blended_cement"
+    },
+    {
+      "term": "ASTM_C595_Type_IS_LT70_MS",
+      "display_name": "ASTM C595 Type IS LT70 MS",
+      "definition": "Blended hydraulic cement type designation defined according to ASTM C595: ASTM_C595_Type_IS_LT70_MS.",
+      "category": "ASTM_C595_blended_cement"
+    },
+    {
+      "term": "ASTM_C595_Type_IT_S_LT70",
+      "display_name": "ASTM C595 Type IT S LT70",
+      "definition": "Blended hydraulic cement type designation defined according to ASTM C595: ASTM_C595_Type_IT_S_LT70.",
+      "category": "ASTM_C595_blended_cement"
+    },
+    {
+      "term": "ASTM_C595_Type_IT_S_LT70_HE",
+      "display_name": "ASTM C595 Type IT S LT70 HE",
+      "definition": "Blended hydraulic cement type designation defined according to ASTM C595: ASTM_C595_Type_IT_S_LT70_HE.",
+      "category": "ASTM_C595_blended_cement"
+    },
+    {
+      "term": "ASTM_C595_Type_IT_S_LT70_HS",
+      "display_name": "ASTM C595 Type IT S LT70 HS",
+      "definition": "Blended hydraulic cement type designation defined according to ASTM C595: ASTM_C595_Type_IT_S_LT70_HS.",
+      "category": "ASTM_C595_blended_cement"
+    },
+    {
+      "term": "ASTM_C595_Type_IT_S_LT70_MS",
+      "display_name": "ASTM C595 Type IT S LT70 MS",
+      "definition": "Blended hydraulic cement type designation defined according to ASTM C595: ASTM_C595_Type_IT_S_LT70_MS.",
+      "category": "ASTM_C595_blended_cement"
+    },
+    {
+      "term": "EN197_CEM_I",
+      "display_name": "EN197 CEM I",
+      "definition": "Common cement type designation defined according to EN 197: EN197_CEM_I.",
+      "category": "EN197_common_cement"
+    },
+    {
+      "term": "EN197_CEM_II",
+      "display_name": "EN197 CEM II",
+      "definition": "Common cement type designation defined according to EN 197: EN197_CEM_II.",
+      "category": "EN197_common_cement"
+    },
+    {
+      "term": "EN197_CEM_III",
+      "display_name": "EN197 CEM III",
+      "definition": "Common cement type designation defined according to EN 197: EN197_CEM_III.",
+      "category": "EN197_common_cement"
+    },
+    {
+      "term": "EN197_CEM_IV",
+      "display_name": "EN197 CEM IV",
+      "definition": "Common cement type designation defined according to EN 197: EN197_CEM_IV.",
+      "category": "EN197_common_cement"
+    },
+    {
+      "term": "EN197_CEM_V",
+      "display_name": "EN197 CEM V",
+      "definition": "Common cement type designation defined according to EN 197: EN197_CEM_V.",
+      "category": "EN197_common_cement"
+    },
+    {
+      "term": "GB175_PC",
+      "display_name": "GB175 PC",
+      "definition": "Common portland cement type designation defined according to GB 175: GB175_PC.",
+      "category": "GB175_common_portland_cement"
+    },
+    {
+      "term": "GB175_PF",
+      "display_name": "GB175 PF",
+      "definition": "Common portland cement type designation defined according to GB 175: GB175_PF.",
+      "category": "GB175_common_portland_cement"
+    },
+    {
+      "term": "GB175_PI",
+      "display_name": "GB175 PI",
+      "definition": "Common portland cement type designation defined according to GB 175: GB175_PI.",
+      "category": "GB175_common_portland_cement"
+    },
+    {
+      "term": "GB175_PII",
+      "display_name": "GB175 PII",
+      "definition": "Common portland cement type designation defined according to GB 175: GB175_PII.",
+      "category": "GB175_common_portland_cement"
+    },
+    {
+      "term": "GB175_PO",
+      "display_name": "GB175 PO",
+      "definition": "Common portland cement type designation defined according to GB 175: GB175_PO.",
+      "category": "GB175_common_portland_cement"
+    },
+    {
+      "term": "GB175_PS",
+      "display_name": "GB175 PS",
+      "definition": "Common portland cement type designation defined according to GB 175: GB175_PS.",
+      "category": "GB175_common_portland_cement"
+    },
+    {
+      "term": "other",
+      "display_name": "Other",
+      "definition": "Cement type that does not fall within the predefined categories.",
+      "category": "other"
+    },
+    {
+      "term": "unknown",
+      "display_name": "Unknown",
+      "definition": "Cement type not reported or not identifiable from the available documentation.",
+      "category": "other"
+    }
+  ]
+}

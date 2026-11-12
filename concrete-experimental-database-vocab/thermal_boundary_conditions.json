@@ -1,0 +1,32 @@
+{
+  "vocabulary_name": "thermal_boundary_conditions",
+  "version": "1.0",
+  "description": "Controlled vocabulary defining thermal boundary conditions used to describe the environmental exposure state of specimens during testing.",
+  "applicable_fields": [
+    "thermal_boundary_condition"
+  ],
+  "naming_convention": "lowercase_underscore_separated",
+  "terms": [
+    {
+      "term": "insulated",
+      "definition": "Boundary condition designed to prevent thermal transfer through the boundary surface.",
+      "applicable_to": [
+        "thermal_boundary_condition"
+      ]
+    },
+    {
+      "term": "uninsulated",
+      "definition": "Boundary condition allowing thermal transfer through the boundary surface.",
+      "applicable_to": [
+        "thermal_boundary_condition"
+      ]
+    },
+    {
+      "term": "unknown",
+      "definition": "Boundary condition not reported or not identifiable from the available documentation.",
+      "applicable_to": [
+        "thermal_boundary_condition"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "library_name": "devices_and_supports",
+  "version": "1.0",
+  "description": "Standardized parametrization library for experimental devices, supports, fixtures, and instrumentation components used in the Concrete Grand Challenge Experimental Database.",
+  "common_parameters": [
+    {
+      "name": "x_location_mm",
+      "type": "number",
+      "units": "mm",
+      "required": false,
+      "description": "x-coordinate of the device or support location in the specimen geometry coordinate system."
+    },
+    {
+      "name": "y_location_mm",
+      "type": "number",
+      "units": "mm",
+      "required": false,
+      "description": "y-coordinate of the device or support location in the specimen geometry coordinate system."
+    },
+    {
+      "name": "z_location_mm",
+      "type": "number",
+      "units": "mm",
+      "required": false,
+      "description": "z-coordinate of the device or support location in the specimen geometry coordinate system."
+    },
+    {
+      "name": "orientation",
+      "type": "vocab",
+      "units": "none",
+      "required": false,
+      "allowed_values": ["x", "y", "z"],
+      "description": "Orientation of the device or support relative to the specimen geometry coordinate system."
+    }
+  ],
+  "entries": [
+    {
+      "device_support_type": "pad_support",
+      "category": "support",
+      "description": "Parametrized deformable pad support used to model compliant boundary conditions in experimental setups.",
+      "coordinate_system": {
+        "reference_frame": "geometry_coordinate_system",
+        "description": "All coordinates and dimensions are defined within the right-handed Cartesian coordinate system associated with the specimen geometry."
+      },
+      "parameters": [
+        {
+          "name": "depth",
+          "type": "number",
+          "units": "mm",
+          "required": true,
+          "description": "Pad dimension measured along the axis defined by the orientation parameter and orthogonal to the contact surface."
+        },
+        {
+          "name": "thickness",
+          "type": "number",
+          "units": "mm",
+          "required": true,
+          "description": "Pad thickness measured in-plane to the contact surface."
+        },
+        {
+          "name": "length",
+          "type": "number",
+          "units": "mm",
+          "required": true,
+          "description": "Pad dimension measured in-plane to the contact surface."
+        },
+        {
+          "name": "material",
+          "type": "string",
+          "required": false,
+          "description": "Pad material."
+        },
+        {
+          "name": "elastic_modulus",
+          "type": "number",
+          "units": "MPa",
+          "required": true,
+          "description": "Elastic modulus of the pad material."
+        },
+        {
+          "name": "yielding_stress",
+          "type": "number",
+          "units": "MPa",
+          "required": false,
+          "description": "Yield stress of the pad material."
+        },
+        {
+          "name": "stress_vs_strain_curve",
+          "type": "array",
+          "required": false,
+          "description": "Embedded constitutive stress-strain response of the pad material.",
+          "schema": {
+            "data_format": ["strain", "stress"],
+            "units": ["-", "MPa"]
+          }
+        }
+      ],
+      "example": {
+        "device_id": "DEV0001",
+        "source_id": "SRC0001",
+        "test_id": "TST0001",
+        "device_type": "pad_support",
+        "parameters": {
+          "x_location_mm": 0.0,
+          "y_location_mm": 0.0,
+          "z_location_mm": 0.0,
+          "orientation": "z",
+          "depth": 50.0,
+          "thickness": 10.0,
+          "length": 100.0,
+          "elastic_modulus": 1500.0,
+          "yielding_stress": 12.0,
+          "stress_vs_strain_curve": [
+            [0.0000, 0.0],
+            [0.0010, 2.0],
+            [0.0050, 8.0],
+            [0.0200, 12.0]
+          ]
+        }
+      }
+    }
+  ]
+}

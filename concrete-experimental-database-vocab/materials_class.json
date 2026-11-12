@@ -1,0 +1,89 @@
+{
+  "vocabulary_name": "material_classes",
+  "version": "1.0",
+  "description": "Controlled vocabulary defining the material classes permitted in the material_batches tab of the Concrete Grand Challenge Experimental Database.",
+  "field_name": "material_class",
+  "naming_convention": "lowercase_underscore_separated",
+  "entries": [
+    {
+      "term": "cement_paste",
+      "display_name": "Cement Paste",
+      "definition": "A cementitious material composed primarily of cement, water, and optional chemical or mineral admixtures without fine or coarse aggregates.",
+      "aliases": [],
+      "category": "cementitious_material"
+    },
+    {
+      "term": "engineered_cementitious_composites",
+      "display_name": "Engineered Cementitious Composites",
+      "definition": "A fiber-reinforced cementitious composite specifically engineered to exhibit strain-hardening behavior and distributed multiple cracking under tensile loading.",
+      "aliases": [
+        "ECC"
+      ],
+      "category": "cementitious_composite"
+    },
+    {
+      "term": "fiber_reinforced_concrete",
+      "display_name": "Fiber Reinforced Concrete",
+      "definition": "Concrete containing discrete fibers intended to improve mechanical performance, toughness, crack control, impact resistance, or durability.",
+      "aliases": [
+        "FRC"
+      ],
+      "category": "concrete"
+    },
+    {
+      "term": "heavyweight_concrete",
+      "display_name": "Heavyweight Concrete",
+      "definition": "Concrete produced using heavyweight aggregates to achieve a density greater than that of conventional normal-weight concrete, typically for radiation shielding or specialized structural applications.",
+      "aliases": [],
+      "category": "concrete"
+    },
+    {
+      "term": "high_performance_concrete",
+      "display_name": "High Performance Concrete",
+      "definition": "Concrete designed to achieve enhanced mechanical, durability, rheological, or long-term performance characteristics beyond those of conventional concrete.",
+      "aliases": [
+        "HPC"
+      ],
+      "category": "concrete"
+    },
+    {
+      "term": "lightweight_concrete",
+      "display_name": "Lightweight Concrete",
+      "definition": "Concrete produced using lightweight aggregates or other density-reducing techniques to achieve reduced self-weight compared to conventional concrete.",
+      "aliases": [],
+      "category": "concrete"
+    },
+    {
+      "term": "mortar",
+      "display_name": "Mortar",
+      "definition": "A cementitious composite consisting primarily of cement, water, fine aggregates, and optional admixtures, without coarse aggregates.",
+      "aliases": [],
+      "category": "cementitious_material"
+    },
+    {
+      "term": "normal_weight_concrete",
+      "display_name": "Normal Weight Concrete",
+      "definition": "Conventional concrete produced using normal-density aggregates and having density characteristics typical of standard structural concrete.",
+      "aliases": [
+        "NWC"
+      ],
+      "category": "concrete"
+    },
+    {
+      "term": "ultra_high_performance_concrete",
+      "display_name": "Ultra High Performance Concrete",
+      "definition": "A highly optimized cementitious composite characterized by very high compressive strength, low permeability, enhanced durability, and typically containing fine powders and fibers.",
+      "aliases": [
+        "UHPC"
+      ],
+      "category": "concrete"
+    },
+    {
+      "term": "other",
+      "display_name": "Other",
+      "definition": "A material class that does not fall within the predefined categories.",
+      "aliases": [],
+      "category": "other"
+    }
+  ]
+}

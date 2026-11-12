@@ -1,0 +1,57 @@
+{
+  "vocabulary_name": "loading_modes",
+  "version": "1.0",
+  "description": "Controlled vocabulary defining loading modes used in the loading_histories tab of the Concrete Grand Challenge Experimental Database.",
+  "field_name": "loading_mode",
+  "naming_convention": "lowercase_underscore_separated",
+  "entries": [
+    {
+      "term": "cyclic",
+      "display_name": "Cyclic",
+      "definition": "Loading mode involving repeated loading and unloading cycles without systematic load reversal.",
+      "category": "loading_mode"
+    },
+    {
+      "term": "dynamic",
+      "display_name": "Dynamic",
+      "definition": "Loading mode characterized by significant inertia or rate-dependent effects.",
+      "category": "loading_mode"
+    },
+    {
+      "term": "impulsive",
+      "display_name": "Impulsive",
+      "definition": "Loading mode involving short-duration high-intensity loading pulses or impact-type actions.",
+      "category": "loading_mode"
+    },
+    {
+      "term": "monotonic",
+      "display_name": "Monotonic",
+      "definition": "Loading mode characterized by continuously increasing or decreasing loading without unloading cycles.",
+      "category": "loading_mode"
+    },
+    {
+      "term": "random",
+      "display_name": "Random",
+      "definition": "Loading mode involving stochastic, irregular, or non-deterministic loading variations.",
+      "category": "loading_mode"
+    },
+    {
+      "term": "reversed_cyclic",
+      "display_name": "Reversed Cyclic",
+      "definition": "Cyclic loading mode involving repeated load reversals between opposite loading directions or signs.",
+      "category": "loading_mode"
+    },
+    {
+      "term": "other",
+      "display_name": "Other",
+      "definition": "Loading mode that does not fall within the predefined categories.",
+      "category": "other"
+    },
+    {
+      "term": "unknown",
+      "display_name": "Unknown",
+      "definition": "Loading mode not reported or not identifiable from the available documentation.",
+      "category": "other"
+    }
+  ]
+}

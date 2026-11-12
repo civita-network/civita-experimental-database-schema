@@ -1,0 +1,315 @@
+{
+  "vocabulary_name": "quantity_reported_types",
+  "version": "1.0",
+  "description": "Controlled vocabulary defining reported quantities used in the data tab of the Concrete Grand Challenge Experimental Database.",
+  "field_name": "quantity_reported",
+  "naming_convention": "lowercase_underscore_separated",
+  "entries": [
+    {
+      "term": "absorption",
+      "display_name": "Absorption",
+      "definition": "Absorption reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "bound_water",
+      "display_name": "Bound Water",
+      "definition": "Bound water content reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "CMOD",
+      "display_name": "CMOD",
+      "definition": "Crack mouth opening displacement reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "coefficient_of_thermal_expansion",
+      "display_name": "Coefficient Of Thermal Expansion",
+      "definition": "Coefficient of thermal expansion reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "compressive_strength",
+      "display_name": "Compressive Strength",
+      "definition": "Compressive strength reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "concentration",
+      "display_name": "Concentration",
+      "definition": "Concentration reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "CTOD",
+      "display_name": "CTOD",
+      "definition": "Crack tip opening displacement reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "cumulative_heat",
+      "display_name": "Cumulative Heat",
+      "definition": "Cumulative heat reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "current",
+      "display_name": "Current",
+      "definition": "Electric current reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "deflection",
+      "display_name": "Deflection",
+      "definition": "Deflection reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "density",
+      "display_name": "Density",
+      "definition": "Density reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "depth",
+      "display_name": "Depth",
+      "definition": "Depth reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "diameter",
+      "display_name": "Diameter",
+      "definition": "Diameter reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "diffusion_coefficient",
+      "display_name": "Diffusion Coefficient",
+      "definition": "Diffusion coefficient reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "displacement",
+      "display_name": "Displacement",
+      "definition": "Displacement reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "distribution",
+      "display_name": "Distribution",
+      "definition": "Distribution reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "elastic_modulus",
+      "display_name": "Elastic Modulus",
+      "definition": "Elastic modulus reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "energy",
+      "display_name": "Energy",
+      "definition": "Energy reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "expansion",
+      "display_name": "Expansion",
+      "definition": "Expansion reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "fraction",
+      "display_name": "Fraction",
+      "definition": "Fraction reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "frequency",
+      "display_name": "Frequency",
+      "definition": "Frequency reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "heat_capacity",
+      "display_name": "Heat Capacity",
+      "definition": "Heat capacity reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "heat_flow",
+      "display_name": "Heat Flow",
+      "definition": "Heat flow reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "humidity",
+      "display_name": "Humidity",
+      "definition": "Humidity reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "length_change",
+      "display_name": "Length Change",
+      "definition": "Length change reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "load",
+      "display_name": "Load",
+      "definition": "Load reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "mass",
+      "display_name": "Mass",
+      "definition": "Mass reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "mass_loss",
+      "display_name": "Mass Loss",
+      "definition": "Mass loss reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "peak_load",
+      "display_name": "Peak Load",
+      "definition": "Peak load reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "permeability",
+      "display_name": "Permeability",
+      "definition": "Permeability reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "pH",
+      "display_name": "pH",
+      "definition": "pH reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "porosity",
+      "display_name": "Porosity",
+      "definition": "Porosity reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "potential",
+      "display_name": "Potential",
+      "definition": "Electric or electrochemical potential reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "pressure",
+      "display_name": "Pressure",
+      "definition": "Pressure reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "resistivity",
+      "display_name": "Resistivity",
+      "definition": "Electrical resistivity reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "rotation",
+      "display_name": "Rotation",
+      "definition": "Rotation reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "slippage",
+      "display_name": "Slippage",
+      "definition": "Slippage reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "slump",
+      "display_name": "Slump",
+      "definition": "Slump reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "sorptivity",
+      "display_name": "Sorptivity",
+      "definition": "Sorptivity reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "strain",
+      "display_name": "Strain",
+      "definition": "Strain reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "stress",
+      "display_name": "Stress",
+      "definition": "Stress reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "temperature",
+      "display_name": "Temperature",
+      "definition": "Temperature reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "temperature_rise",
+      "display_name": "Temperature Rise",
+      "definition": "Temperature rise reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "tensile_strength",
+      "display_name": "Tensile Strength",
+      "definition": "Tensile strength reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "thermal_conductivity",
+      "display_name": "Thermal Conductivity",
+      "definition": "Thermal conductivity reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "thermal_diffusivity",
+      "display_name": "Thermal Diffusivity",
+      "definition": "Thermal diffusivity reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "time",
+      "display_name": "Time",
+      "definition": "Time reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "viscosity",
+      "display_name": "Viscosity",
+      "definition": "Viscosity reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "volume",
+      "display_name": "Volume",
+      "definition": "Volume reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "yield_stress",
+      "display_name": "Yield Stress",
+      "definition": "Yield stress reported in the experimental dataset.",
+      "category": "reported_quantity"
+    },
+    {
+      "term": "other",
+      "display_name": "Other",
+      "definition": "Reported quantity that does not fall within the predefined categories.",
+      "category": "other"
+    }
+  ]
+}

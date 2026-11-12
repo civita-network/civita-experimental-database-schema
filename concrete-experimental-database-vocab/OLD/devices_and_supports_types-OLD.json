@@ -1,0 +1,363 @@
+{
+  "vocabulary_name": "devices_and_supports",
+  "version": "1.0",
+  "description": "Controlled vocabulary defining device and support types used in the devices_and_supports tab of the Concrete Grand Challenge Experimental Database.",
+  "field_name": "device_type",
+  "naming_convention": "lowercase_underscore_separated",
+  "entries": [
+    {
+      "term": "accelerometer",
+      "display_name": "Accelerometer",
+      "definition": "Sensor used to measure acceleration and dynamic response.",
+      "category": "sensor"
+    },
+    {
+      "term": "adiabatic_calorimeter",
+      "display_name": "Adiabatic Calorimeter",
+      "definition": "Calorimetry device used to measure heat evolution under adiabatic conditions.",
+      "category": "thermal_device"
+    },
+    {
+      "term": "balance",
+      "display_name": "Balance",
+      "definition": "Device used to measure mass or weight.",
+      "category": "measurement_device"
+    },
+    {
+      "term": "camera",
+      "display_name": "Camera",
+      "definition": "General imaging device used for visual recording or monitoring.",
+      "category": "imaging_device"
+    },
+    {
+      "term": "clip_gauge",
+      "display_name": "Clip Gauge",
+      "definition": "Displacement gauge typically attached across a crack or gauge length.",
+      "category": "sensor"
+    },
+    {
+      "term": "CMOD_gauge",
+      "display_name": "CMOD Gauge",
+      "definition": "Gauge used to measure crack mouth opening displacement.",
+      "category": "sensor"
+    },
+    {
+      "term": "CTOD_gauge",
+      "display_name": "CTOD Gauge",
+      "definition": "Gauge used to measure crack tip opening displacement.",
+      "category": "sensor"
+    },
+    {
+      "term": "data_logger",
+      "display_name": "Data Logger",
+      "definition": "Electronic device used for automated acquisition and storage of sensor data.",
+      "category": "data_acquisition"
+    },
+    {
+      "term": "DIC",
+      "display_name": "Digital Image Correlation System",
+      "definition": "Digital image correlation system used for full-field displacement and strain measurements.",
+      "category": "imaging_device"
+    },
+    {
+      "term": "diffusion_cell",
+      "display_name": "Diffusion Cell",
+      "definition": "Experimental apparatus used to evaluate diffusion and transport properties.",
+      "category": "transport_device"
+    },
+    {
+      "term": "dilatometer",
+      "display_name": "Dilatometer",
+      "definition": "Instrument used to measure dimensional change or thermal expansion.",
+      "category": "measurement_device"
+    },
+    {
+      "term": "environmental_chamber",
+      "display_name": "Environmental Chamber",
+      "definition": "Controlled chamber used to regulate temperature, humidity, or environmental exposure conditions.",
+      "category": "environmental_device"
+    },
+    {
+      "term": "exposure_chamber",
+      "display_name": "Exposure Chamber",
+      "definition": "Chamber used to expose specimens to controlled environmental or chemical conditions.",
+      "category": "environmental_device"
+    },
+    {
+      "term": "extensometer",
+      "display_name": "Extensometer",
+      "definition": "Instrument used to measure deformation or strain over a specified gauge length.",
+      "category": "sensor"
+    },
+    {
+      "term": "fixed_support",
+      "display_name": "Fixed Support",
+      "definition": "Rigid support restraining translational and rotational movement.",
+      "category": "support"
+    },
+    {
+      "term": "flow_table",
+      "display_name": "Flow Table",
+      "definition": "Device used to evaluate flow characteristics and workability of fresh materials.",
+      "category": "fresh_state_device"
+    },
+    {
+      "term": "ftir_spectrometer",
+      "display_name": "FTIR Spectrometer",
+      "definition": "Fourier-transform infrared spectroscopy instrument used for chemical characterization.",
+      "category": "chemical_characterization"
+    },
+    {
+      "term": "half_cell_electrode",
+      "display_name": "Half Cell Electrode",
+      "definition": "Electrochemical probe used to assess corrosion potential.",
+      "category": "electrochemical_device"
+    },
+    {
+      "term": "high_speed_camera",
+      "display_name": "High Speed Camera",
+      "definition": "High-frame-rate imaging device used to capture rapid events or fracture processes.",
+      "category": "imaging_device"
+    },
+    {
+      "term": "humidity_sensor",
+      "display_name": "Humidity Sensor",
+      "definition": "Sensor used to measure relative humidity.",
+      "category": "sensor"
+    },
+    {
+      "term": "icp",
+      "display_name": "ICP Instrument",
+      "definition": "Inductively coupled plasma instrument used for chemical analysis.",
+      "category": "chemical_characterization"
+    },
+    {
+      "term": "isothermal_calorimeter",
+      "display_name": "Isothermal Calorimeter",
+      "definition": "Calorimetry device used to measure heat evolution under isothermal conditions.",
+      "category": "thermal_device"
+    },
+    {
+      "term": "laser_displacement_sensor",
+      "display_name": "Laser Displacement Sensor",
+      "definition": "Laser-based sensor used to measure displacement without physical contact.",
+      "category": "sensor"
+    },
+    {
+      "term": "laser_sensor",
+      "display_name": "Laser Sensor",
+      "definition": "General laser-based sensing device for distance or position measurements.",
+      "category": "sensor"
+    },
+    {
+      "term": "leaching_reactor",
+      "display_name": "Leaching Reactor",
+      "definition": "Experimental reactor used to study leaching processes and chemical degradation.",
+      "category": "chemical_device"
+    },
+    {
+      "term": "length_comparator",
+      "display_name": "Length Comparator",
+      "definition": "Instrument used to measure specimen length changes with high precision.",
+      "category": "measurement_device"
+    },
+    {
+      "term": "load_cell",
+      "display_name": "Load Cell",
+      "definition": "Force transducer used to measure applied load.",
+      "category": "sensor"
+    },
+    {
+      "term": "LVDT",
+      "display_name": "LVDT",
+      "definition": "Linear variable differential transformer used to measure displacement.",
+      "category": "sensor"
+    },
+    {
+      "term": "mercury_intrusion_porosimeter",
+      "display_name": "Mercury Intrusion Porosimeter",
+      "definition": "Instrument used to characterize pore-size distributions through mercury intrusion.",
+      "category": "transport_device"
+    },
+    {
+      "term": "micro_ct_scanner",
+      "display_name": "Micro CT Scanner",
+      "definition": "Micro-computed tomography scanner used for three-dimensional internal imaging.",
+      "category": "imaging_device"
+    },
+    {
+      "term": "microscope",
+      "display_name": "Microscope",
+      "definition": "General optical or digital microscope used for imaging and material characterization.",
+      "category": "imaging_device"
+    },
+    {
+      "term": "migration_cell",
+      "display_name": "Migration Cell",
+      "definition": "Apparatus used to evaluate ionic migration and transport properties.",
+      "category": "transport_device"
+    },
+    {
+      "term": "nmr_spectrometer",
+      "display_name": "NMR Spectrometer",
+      "definition": "Nuclear magnetic resonance instrument used for material characterization.",
+      "category": "chemical_characterization"
+    },
+    {
+      "term": "optical_microscope",
+      "display_name": "Optical Microscope",
+      "definition": "Optical microscope used for surface or microstructural observation.",
+      "category": "imaging_device"
+    },
+    {
+      "term": "pad_support",
+      "display_name": "Pad Support",
+      "definition": "Compliant support element used to provide deformable boundary conditions.",
+      "category": "support"
+    },
+    {
+      "term": "penetration_resistance_device",
+      "display_name": "Penetration Resistance Device",
+      "definition": "Device used to evaluate penetration resistance and setting behavior.",
+      "category": "fresh_state_device"
+    },
+    {
+      "term": "permeability_apparatus",
+      "display_name": "Permeability Apparatus",
+      "definition": "Experimental setup used to measure permeability properties.",
+      "category": "transport_device"
+    },
+    {
+      "term": "ph_meter",
+      "display_name": "pH Meter",
+      "definition": "Instrument used to measure pH values.",
+      "category": "chemical_characterization"
+    },
+    {
+      "term": "pin_support",
+      "display_name": "Pin Support",
+      "definition": "Support allowing rotational movement while restraining translation.",
+      "category": "support"
+    },
+    {
+      "term": "potentiostat",
+      "display_name": "Potentiostat",
+      "definition": "Electrochemical instrument used for corrosion and electrochemical testing.",
+      "category": "electrochemical_device"
+    },
+    {
+      "term": "pressure_sensor",
+      "display_name": "Pressure Sensor",
+      "definition": "Sensor used to measure pressure.",
+      "category": "sensor"
+    },
+    {
+      "term": "rcpt_apparatus",
+      "display_name": "RCPT Apparatus",
+      "definition": "Experimental apparatus used for rapid chloride permeability testing.",
+      "category": "transport_device"
+    },
+    {
+      "term": "resistivity_meter",
+      "display_name": "Resistivity Meter",
+      "definition": "Instrument used to measure electrical resistivity.",
+      "category": "electrochemical_device"
+    },
+    {
+      "term": "rheometer",
+      "display_name": "Rheometer",
+      "definition": "Instrument used to characterize rheological properties of fresh materials.",
+      "category": "fresh_state_device"
+    },
+    {
+      "term": "roller_support",
+      "display_name": "Roller Support",
+      "definition": "Support allowing translational movement in one direction while restraining other motions.",
+      "category": "support"
+    },
+    {
+      "term": "rotation_sensor",
+      "display_name": "Rotation Sensor",
+      "definition": "Sensor used to measure angular displacement or rotation.",
+      "category": "sensor"
+    },
+    {
+      "term": "scanning_electron_microscope",
+      "display_name": "Scanning Electron Microscope",
+      "definition": "Electron microscope used for high-resolution microstructural characterization.",
+      "category": "imaging_device"
+    },
+    {
+      "term": "slump_cone",
+      "display_name": "Slump Cone",
+      "definition": "Conical apparatus used to perform slump tests on fresh concrete.",
+      "category": "fresh_state_device"
+    },
+    {
+      "term": "sorptivity_setup",
+      "display_name": "Sorptivity Setup",
+      "definition": "Experimental setup used to evaluate capillary absorption and sorptivity.",
+      "category": "transport_device"
+    },
+    {
+      "term": "strain_gauge",
+      "display_name": "Strain Gauge",
+      "definition": "Sensor used to measure local strain.",
+      "category": "sensor"
+    },
+    {
+      "term": "string_potentiometer",
+      "display_name": "String Potentiometer",
+      "definition": "Displacement transducer based on cable extension measurements.",
+      "category": "sensor"
+    },
+    {
+      "term": "temperature_sensor",
+      "display_name": "Temperature Sensor",
+      "definition": "Sensor used to measure temperature.",
+      "category": "sensor"
+    },
+    {
+      "term": "thermocouple",
+      "display_name": "Thermocouple",
+      "definition": "Temperature measurement device based on thermoelectric junctions.",
+      "category": "sensor"
+    },
+    {
+      "term": "tga_analyzer",
+      "display_name": "TGA Analyzer",
+      "definition": "Thermogravimetric analysis instrument used to evaluate mass changes with temperature.",
+      "category": "thermal_device"
+    },
+    {
+      "term": "unknown",
+      "display_name": "Unknown",
+      "definition": "Device type not reported or not identifiable from the available documentation.",
+      "category": "other"
+    },
+    {
+      "term": "vicat_apparatus",
+      "display_name": "Vicat Apparatus",
+      "definition": "Apparatus used to determine setting times of cementitious materials.",
+      "category": "fresh_state_device"
+    },
+    {
+      "term": "wenner_probe",
+      "display_name": "Wenner Probe",
+      "definition": "Probe configuration used to measure electrical resistivity using the Wenner method.",
+      "category": "electrochemical_device"
+    },
+    {
+      "term": "xrd_diffractometer",
+      "display_name": "XRD Diffractometer",
+      "definition": "X-ray diffraction instrument used for phase identification and crystallographic characterization.",
+      "category": "chemical_characterization"
+    },
+    {
+      "term": "other",
+      "display_name": "Other",
+      "definition": "Device or support type that does not fall within the predefined categories.",
+      "category": "other"
+    }
+  ]
+}
