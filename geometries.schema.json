@@ -12,7 +12,7 @@
     "status": "draft",
     "repository": "https://github.com/civita-network/civita-experimental-database-schema"
   },
-  "$comment": "Use x-civita-geometry-library to resolve the exact geometry_type_id and geometry_type_version. Apply the required parameter names, bounds, and compatibility rules from that version as described in concrete-experimental-database-vocab/README.md#geometry-instances.",
+  "$comment": "This schema performs structural validation only: field names, identifier formats, version syntax, and parameter values restricted to numbers or strings. It does not enforce geometry-specific rules. Use x-civita-geometry-library to resolve the exact geometry_type_id and geometry_type_version, then validate the parameters against that version: recognized parameter names, declared types, required parameters, admissible categorical values, defaults for omitted optional parameters, numerical bounds, and geometric compatibility constraints, as described in concrete-experimental-database-vocab/README.md#geometry-instances.",
   "x-civita-geometry-library": "https://raw.githubusercontent.com/civita-network/civita-schema/main/geometry_library.json",
   "type": "object",
   "additionalProperties": false,
@@ -52,9 +52,12 @@
     },
     "parameters": {
       "type": "object",
-      "description": "Embedded numerical parameter values in the canonical units of the referenced geometry type version.",
+      "description": "Independent geometry parameter values, including numerical dimensions and categorical characteristics, as defined by the referenced geometry type and version in the common CIVITA Geometry Library. Numerical values use the canonical units of that definition. Whether each name, type, value, and omission is admissible is determined by the resolved library definition, not by this schema.",
       "additionalProperties": {
-        "type": "number"
+        "type": [
+          "number",
+          "string"
+        ]
       }
     },
     "notes": {
@@ -71,6 +74,21 @@
       "parameters": {
         "length": 200,
         "diameter": 100
+      }
+    },
+    {
+      "geometry_id": "GEO0002",
+      "source_id": "SRC0001",
+      "geometry_type_id": "GLOB-GEO0005",
+      "geometry_type_version": "1.0.0",
+      "parameters": {
+        "length": 170,
+        "width": 112,
+        "dogbone_central_length": 46,
+        "dogbone_central_width": 52,
+        "dogbone_head_length": 32,
+        "dogbone_thickness": 24,
+        "transition_type": "curved_transition"
       }
     }
   ]

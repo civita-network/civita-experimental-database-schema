@@ -8,13 +8,13 @@ The `source_type` vocabulary is shared with the Computational Database and maint
 
 ## Geometry instances
 
-The [common geometry library](https://github.com/civita-network/civita-schema/blob/main/geometry_library.json) is the authoritative registry for geometry types, parameter units and constraints, and local coordinate systems. The [experimental geometries schema](../geometries.schema.json) describes individual instances. Each instance embeds its numerical `parameters` in the literature source's dataset.
+The [common geometry library](https://github.com/civita-network/civita-schema/blob/main/geometry_library.json) is the authoritative registry for geometry types, parameter units and constraints, and local coordinate systems. The [experimental geometries schema](../geometries.schema.json) describes individual instances. Each instance embeds its independent `parameters` in the literature source's dataset. Parameter values are numerical dimensions or, where the resolved common geometry definition declares them, categorical (string) values such as the dogbone `transition_type`.
 
 ### Validate a geometry instance
 
-1. Validate the record against the experimental schema, which checks field names, types, identifier formats, and version syntax.
+1. Validate the record against the experimental schema, which checks field names, types, identifier formats, and version syntax. Structurally, each parameter value must be a number or a string; the schema does not check geometry-specific names, values, or constraints.
 2. Resolve the exact `geometry_type_id` and `geometry_type_version` in the common library. Reject unresolved identifiers and versions. Preserve published definitions and their coordinate conventions for existing records.
-3. Require each parameter marked as required by the resolved definition. Reject unknown parameters unless the definition explicitly allows them. Require finite numbers in the definition's canonical units and apply its declared numerical bounds.
+3. Require each parameter marked as required by the resolved definition. Reject unknown parameters unless the definition explicitly allows them. Check each value against its declared type. Require finite numbers in the definition's canonical units for numerical parameters and apply their declared numerical bounds. Require categorical values to match the parameter's `enum`. When an optional parameter is omitted, use its declared `default` as the effective value.
 4. Preserve signed offsets and permit zero where an inclusive minimum allows it. Apply geometry-specific compatibility rules when the resolved definition formalizes them.
 
 The submission application's dataset validator needs to perform steps 2 through 4. The schema's `x-civita-geometry-library` annotation identifies the registry for that workflow.
@@ -27,9 +27,9 @@ The submission application's dataset validator needs to perform steps 2 through 
 
 ### Library reconciliation
 
-The shared and former experimental libraries define the same seven geometry types and 31 parameters. Parameter names, numerical types, units, required flags, and axis conventions agree. The common library formalizes strictly positive dimensions, signed `notch_offset`, and optional notch-tip radii that may equal zero.
+The common library is the authoritative definition for all experimental geometry instances. It defines seven geometry types (`prism`, `cube`, `cylinder`, `notched_prism`, `dogbone`, `ell_shape`, and `notched_cylinder`). Their independent parameters are numerical dimensions in mm with strictly positive bounds, except the signed `notch_offset`, plus one optional categorical parameter, the dogbone `transition_type` (default `curved_transition`). The notch-tip radii of the notched prism and notched cylinder and the dogbone transition dimensions are derived parameters calculated by the library, not submitted values. Geometric compatibility constraints are defined per geometry type. Confirm the parameter meanings and coordinate conventions of each legacy record against the resolved common definition before migrating it.
 
-For `ell_shape`, the common definition places the origin at the upper-left exterior corner of the rear face. The [reference figure](https://github.com/civita-network/civita-schema/blob/main/figures/geometries/ell_shape.png) marks that corner as O, resolving the former registry's ambiguous wording. Review source records that explicitly used the reentrant corner before migrating any geometry or associated coordinates.
+For `ell_shape`, the origin O is the exterior corner of the L-shaped profile on the reference face y = 0, at x = 0, z = 0, as marked in the [reference figure](https://github.com/civita-network/civita-schema/blob/main/figures/geometries/generated/ell_shape.svg). The profile lies in the local x-z plane, and the reentrant corner is at x = `ell_length_2`, z = `ell_depth_1 - ell_depth_2`. O is not the reentrant corner. Review source records that explicitly used the reentrant corner as their reference point before migrating any geometry or associated coordinates.
 
 ## Purpose
 
