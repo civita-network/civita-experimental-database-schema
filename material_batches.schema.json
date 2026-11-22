@@ -1,8 +1,18 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "material_batches_schema.json",
-  "title": "Material Batches Validation Schema",
-  "description": "Validation schema for records in the material_batches tab of the Concrete Grand Challenge Experimental Database submission template.",
+  "$id": "https://civita.network/schemas/experimental/material_batches.schema.json",
+  "title": "CIVITA Experimental Material Batches Schema",
+  "description": "Authoritative specification for material batch records and mixture composition fields in the CIVITA Experimental Database.",
+  "metadata": {
+    "id": "civita.experimental.material_batches",
+    "title": "CIVITA Experimental Material Batches Schema",
+    "description": "Defines material batch records and mixture composition fields for the CIVITA Experimental Database.",
+    "type": "record_schema",
+    "version": "1.0.0",
+    "status": "draft",
+    "repository": "https://github.com/civita-network/civita-experimental-database-schema"
+  },
+  "$comment": "Dataset validators must check vocabulary membership in addition to JSON Schema validation. Resolve each x-civita-vocabulary path relative to the schema file. For each annotated field present in a record, require an exact, case-sensitive match to an entries[].term value in the referenced vocabulary.",
 
   "type": "object",
   "additionalProperties": false,
@@ -10,9 +20,7 @@
   "required": [
     "batch_id",
     "source_id",
-    "material_class",
-    "cement_content_kg_m3",
-    "water_binder_ratio"
+    "material_class"
   ],
 
   "properties": {
@@ -44,12 +52,14 @@
 
     "material_class": {
       "type": "string",
-      "description": "General material class from the controlled vocabulary."
+      "description": "General material class from the controlled vocabulary.",
+      "x-civita-vocabulary": "concrete-experimental-database-vocab/materials_class.json"
     },
 
     "cement_type": {
       "type": "string",
-      "description": "Cement classification, designation, or product description."
+      "description": "Cement classification, designation, or product description.",
+      "x-civita-vocabulary": "concrete-experimental-database-vocab/cement_types.json"
     },
 
     "printable": {
@@ -87,7 +97,8 @@
     },
 
     "fly_ash_class": {
-      "type": "string"
+      "type": "string",
+      "x-civita-vocabulary": "concrete-experimental-database-vocab/fly_ash_classes.json"
     },
 
     "slag_content_kg_m3": {
@@ -121,11 +132,13 @@
     },
 
     "aggregate_type": {
-      "type": "string"
+      "type": "string",
+      "x-civita-vocabulary": "concrete-experimental-database-vocab/aggregate_types.json"
     },
 
     "superplasticizer_type": {
-      "type": "string"
+      "type": "string",
+      "x-civita-vocabulary": "concrete-experimental-database-vocab/superplasticizer_types.json"
     },
 
     "superplasticizer_content_kg_m3": {
@@ -134,7 +147,8 @@
     },
 
     "water_reducer_type": {
-      "type": "string"
+      "type": "string",
+      "x-civita-vocabulary": "concrete-experimental-database-vocab/water_reducer_types.json"
     },
 
     "water_reducer_content_ml_m3": {
@@ -143,7 +157,8 @@
     },
 
     "air_entrainment_type": {
-      "type": "string"
+      "type": "string",
+      "x-civita-vocabulary": "concrete-experimental-database-vocab/air_entrainment_types.json"
     },
 
     "air_entrainment_content_ml_m3": {
@@ -152,7 +167,8 @@
     },
 
     "rheology_modifier_type": {
-      "type": "string"
+      "type": "string",
+      "x-civita-vocabulary": "concrete-experimental-database-vocab/rheology_modifier_types.json"
     },
 
     "rheology_modifier_content_kg_m3": {
@@ -161,7 +177,8 @@
     },
 
     "hydration_accelerator_type": {
-      "type": "string"
+      "type": "string",
+      "x-civita-vocabulary": "concrete-experimental-database-vocab/hydration_accelerator_types.json"
     },
 
     "hydration_accelerator_content_ml_m3": {
@@ -170,7 +187,8 @@
     },
 
     "fiber_type": {
-      "type": "string"
+      "type": "string",
+      "x-civita-vocabulary": "concrete-experimental-database-vocab/fiber_types.json"
     },
 
     "fiber_product_name": {
