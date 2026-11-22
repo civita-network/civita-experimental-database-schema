@@ -29,7 +29,7 @@ The submission application's dataset validator needs to perform steps 2 through 
 
 The shared and former experimental libraries define the same seven geometry types and 31 parameters. Parameter names, numerical types, units, required flags, and axis conventions agree. The common library formalizes strictly positive dimensions, signed `notch_offset`, and optional notch-tip radii that may equal zero.
 
-For `ell_shape`, the common definition places the origin at the upper-left exterior corner of the rear face. The [reference figure](https://github.com/civita-network/civita-documentation/blob/main/figs/geometries/ell_shape.png) marks that corner as O, resolving the former registry's ambiguous wording. Review source records that explicitly used the reentrant corner before migrating any geometry or associated coordinates.
+For `ell_shape`, the common definition places the origin at the upper-left exterior corner of the rear face. The [reference figure](https://github.com/civita-network/civita-schema/blob/main/figures/geometries/ell_shape.png) marks that corner as O, resolving the former registry's ambiguous wording. Review source records that explicitly used the reentrant corner before migrating any geometry or associated coordinates.
 
 ## Purpose
 
