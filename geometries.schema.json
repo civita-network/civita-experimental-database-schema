@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://civita.network/schemas/experimental/geometries.schema.json",
+  "title": "CIVITA Experimental Geometries Schema",
+  "description": "Defines experimental geometry instances using versioned parametrizations from the common CIVITA geometry library.",
+  "metadata": {
+    "id": "civita.experimental.geometries",
+    "title": "CIVITA Experimental Geometries Schema",
+    "description": "Defines experimental geometry instances using versioned parametrizations from the common CIVITA geometry library.",
+    "type": "record_schema",
+    "version": "1.0.0",
+    "status": "draft",
+    "repository": "https://github.com/civita-network/civita-experimental-database-schema"
+  },
+  "$comment": "Use x-civita-geometry-library to resolve the exact geometry_type_id and geometry_type_version. Apply the required parameter names, bounds, and compatibility rules from that version as described in concrete-experimental-database-vocab/README.md#geometry-instances.",
+  "x-civita-geometry-library": "https://raw.githubusercontent.com/civita-network/civita-schema/main/geometry_library.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "geometry_id",
+    "source_id",
+    "geometry_type_id",
+    "geometry_type_version",
+    "parameters"
+  ],
+  "properties": {
+    "geometry_id": {
+      "type": "string",
+      "description": "Local identifier for this geometry instance in the Experimental Database.",
+      "pattern": "^GEO[0-9]{4}$",
+      "examples": [
+        "GEO0001"
+      ]
+    },
+    "source_id": {
+      "type": "string",
+      "description": "Identifier of the literature source associated with this geometry instance.",
+      "pattern": "^SRC[0-9]{4}$",
+      "examples": [
+        "SRC0001"
+      ]
+    },
+    "geometry_type_id": {
+      "type": "string",
+      "description": "Global identifier of the geometry type in the common CIVITA geometry library.",
+      "pattern": "^GLOB-GEO[0-9]{4}$"
+    },
+    "geometry_type_version": {
+      "type": "string",
+      "description": "Version of the referenced geometry type, expressed as MAJOR.MINOR.PATCH.",
+      "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)$"
+    },
+    "parameters": {
+      "type": "object",
+      "description": "Embedded numerical parameter values in the canonical units of the referenced geometry type version.",
+      "additionalProperties": {
+        "type": "number"
+      }
+    },
+    "notes": {
+      "type": "string",
+      "description": "Additional information about the geometry instance."
+    }
+  },
+  "examples": [
+    {
+      "geometry_id": "GEO0001",
+      "source_id": "SRC0001",
+      "geometry_type_id": "GLOB-GEO0003",
+      "geometry_type_version": "1.0.0",
+      "parameters": {
+        "length": 200,
+        "diameter": 100
+      }
+    }
+  ]
+}

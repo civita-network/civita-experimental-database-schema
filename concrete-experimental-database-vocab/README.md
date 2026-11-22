@@ -6,6 +6,31 @@ The JSON files in this folder are the authoritative source for permitted terms u
 
 The `source_type` vocabulary is shared with the Computational Database and maintained in [the common CIVITA specifications](https://github.com/civita-network/civita-schema/blob/main/source_types.json).
 
+## Geometry instances
+
+The [common geometry library](https://github.com/civita-network/civita-schema/blob/main/geometry_library.json) is the authoritative registry for geometry types, parameter units and constraints, and local coordinate systems. The [experimental geometries schema](../geometries.schema.json) describes individual instances. Each instance embeds its numerical `parameters` in the literature source's dataset.
+
+### Validate a geometry instance
+
+1. Validate the record against the experimental schema, which checks field names, types, identifier formats, and version syntax.
+2. Resolve the exact `geometry_type_id` and `geometry_type_version` in the common library. Reject unresolved identifiers and versions. Preserve published definitions and their coordinate conventions for existing records.
+3. Require each parameter marked as required by the resolved definition. Reject unknown parameters unless the definition explicitly allows them. Require finite numbers in the definition's canonical units and apply its declared numerical bounds.
+4. Preserve signed offsets and permit zero where an inclusive minimum allows it. Apply geometry-specific compatibility rules when the resolved definition formalizes them.
+
+The submission application's dataset validator needs to perform steps 2 through 4. The schema's `x-civita-geometry-library` annotation identifies the registry for that workflow.
+
+### Migrate legacy records
+
+- Replace `specimen_geometry_type` with the matching global type identifier and version after checking the old record's shape and coordinate conventions. Legacy categories such as `beam`, `notched_beam`, `panel`, `wall`, and `plate` have no same-name entry in the common library. Review each mapping before conversion.
+- Replace the `geometry_file_name` reference, or the submission application's `specimen_geometry_file_name` field, with embedded parameter values. For legacy CSV, read the names, units, and values rows together. For legacy JSON, extract the values and units from the parameter objects. Confirm parameter meaning, units, and reference coordinates before converting. Keep any record with missing or ambiguous values for review.
+- Map `Notes` to `notes` where applicable.
+
+### Library reconciliation
+
+The shared and former experimental libraries define the same seven geometry types and 31 parameters. Parameter names, numerical types, units, required flags, and axis conventions agree. The common library formalizes strictly positive dimensions, signed `notch_offset`, and optional notch-tip radii that may equal zero.
+
+For `ell_shape`, the common definition places the origin at the upper-left exterior corner of the rear face. The [reference figure](https://github.com/civita-network/civita-documentation/blob/main/figs/geometries/ell_shape.png) marks that corner as O, resolving the former registry's ambiguous wording. Review source records that explicitly used the reentrant corner before migrating any geometry or associated coordinates.
+
 ## Purpose
 
 Controlled vocabularies provide standardized terms for database fields that would otherwise be difficult to interpret consistently across contributors, laboratories, publications, and experimental traditions.

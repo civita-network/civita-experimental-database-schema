@@ -3,8 +3,8 @@
 | Material | License or treatment |
 | --- | --- |
 | Original root-level record schemas, including `*.schema.json` and `*_schema.json`, and the technical structure of `database_hierarchy.json` | [MIT](LICENSE) |
-| Technical parametrization structures in `concrete-experimental-database-vocab/geometry_library.json`, `devices_and_supports_library.json`, and `test_types_library.json` | [MIT](LICENSE) |
-| Eligible CIVITA-owned public metadata and controlled terms and definitions in the active vocabulary directory, including classification fields in the three mixed libraries | [CC0 1.0 Universal](LICENSE-CC0) |
+| Technical parametrization structures in `concrete-experimental-database-vocab/devices_and_supports_library.json` and `concrete-experimental-database-vocab/test_types_library.json` | [MIT](LICENSE) |
+| Eligible CIVITA-owned public metadata and controlled terms and definitions in the active vocabulary directory, including classification fields in the two mixed libraries | [CC0 1.0 Universal](LICENSE-CC0) |
 | Original scientific explanations and prose in the README files | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode) |
 | `concrete_data_collection_template.xlsx`, entries in `concrete-experimental-database-vocab/OLD/`, referenced standards, and imported material | Preserve original terms and provenance. Review uncertain rights before redistribution. |
 
