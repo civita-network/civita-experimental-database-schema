@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "id": "civita.experimental.reinforcement_material_types",
+    "title": "CIVITA Reinforcement Material Types",
+    "description": "Controlled vocabulary defining reinforcement material classifications for the CIVITA Experimental Database.",
+    "type": "vocabulary",
+    "version": "1.0.0",
+    "status": "draft",
+    "repository": "https://github.com/civita-network/civita-experimental-database-schema"
+  },
+  "vocabulary_name": "reinforcement_material_types",
+  "field_name": "reinforcement_material_type",
+  "naming_convention": "lowercase_underscore_separated",
+  "entries": [
+    {
+      "term": "basalt_fiber_reinforced_polymer",
+      "definition": "A polymer matrix composite reinforced with basalt fibers."
+    },
+    {
+      "term": "black_steel",
+      "definition": "Uncoated reinforcement made of carbon steel or low-alloy steel."
+    },
+    {
+      "term": "carbon_fiber_reinforced_polymer",
+      "definition": "A polymer matrix composite reinforced with carbon fibers."
+    },
+    {
+      "term": "galvanized_steel",
+      "definition": "Steel reinforcement with a protective zinc coating."
+    },
+    {
+      "term": "glass_fiber_reinforced_polymer",
+      "definition": "A polymer matrix composite reinforced with glass fibers."
+    },
+    {
+      "term": "stainless_steel",
+      "definition": "Reinforcement made from a stainless steel alloy whose chromium content promotes the formation of a corrosion-resistant passive layer."
+    },
+    {
+      "term": "other",
+      "definition": "A reinforcement material outside the listed classifications."
+    }
+  ]
+}

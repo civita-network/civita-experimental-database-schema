@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://civita.network/schemas/experimental/reinforcement_materials.schema.json",
+  "title": "CIVITA Experimental Reinforcement Materials Schema",
+  "description": "Defines reinforcement material properties and stress-strain relationships for the CIVITA Experimental Database.",
+  "metadata": {
+    "id": "civita.experimental.reinforcement_materials",
+    "title": "CIVITA Experimental Reinforcement Materials Schema",
+    "description": "Defines reinforcement material properties and stress-strain relationships for the CIVITA Experimental Database.",
+    "type": "record_schema",
+    "version": "1.0.0",
+    "status": "draft",
+    "repository": "https://github.com/civita-network/civita-experimental-database-schema"
+  },
+  "$comment": "After JSON Schema validation, resolve x-civita-vocabulary relative to this schema file and require an exact match to an entries[].term in the referenced vocabulary. If stress_strain_curve is present, reject unequal lengths for strain and stress_mpa. If elastic_modulus_mpa is absent, issue a nonblocking completeness warning, especially for fiber-reinforced polymers.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "reinforcement_material_id",
+    "source_id",
+    "reinforcement_material_type"
+  ],
+  "anyOf": [
+    {
+      "required": [
+        "yield_strength_mpa"
+      ]
+    },
+    {
+      "required": [
+        "rupture_strength_mpa"
+      ]
+    }
+  ],
+  "properties": {
+    "reinforcement_material_id": {
+      "type": "string",
+      "description": "Local identifier of the reinforcement material.",
+      "pattern": "^RMT[0-9]{4}$",
+      "examples": [
+        "RMT0001"
+      ]
+    },
+    "source_id": {
+      "type": "string",
+      "description": "Local identifier of the literature source for this record. A source may define multiple reinforcement materials.",
+      "pattern": "^SRC[0-9]{4}$",
+      "examples": [
+        "SRC0001"
+      ]
+    },
+    "reinforcement_material_type": {
+      "type": "string",
+      "description": "Classification of the reinforcement material.",
+      "x-civita-vocabulary": "concrete-experimental-database-vocab/reinforcement_material_types.json"
+    },
+    "elastic_modulus_mpa": {
+      "type": "number",
+      "description": "Reported elastic modulus in megapascals (MPa).",
+      "exclusiveMinimum": 0
+    },
+    "yield_strength_mpa": {
+      "type": "number",
+      "description": "Reported yield strength in megapascals (MPa).",
+      "exclusiveMinimum": 0
+    },
+    "rupture_strength_mpa": {
+      "type": "number",
+      "description": "Reported strength at rupture in megapascals (MPa).",
+      "exclusiveMinimum": 0
+    },
+    "rupture_strain": {
+      "type": "number",
+      "description": "Reported dimensionless strain at rupture.",
+      "minimum": 0
+    },
+    "stress_strain_curve": {
+      "type": "object",
+      "description": "Stress-strain measurements embedded in the dataset. Values at the same index form one data point. The arrays must have equal lengths. Preserve the reported points in their original order without interpolation.",
+      "additionalProperties": false,
+      "required": [
+        "strain",
+        "stress_mpa"
+      ],
+      "properties": {
+        "strain": {
+          "type": "array",
+          "description": "Dimensionless strain values in the original point order.",
+          "minItems": 2,
+          "items": {
+            "type": "number"
+          }
+        },
+        "stress_mpa": {
+          "type": "array",
+          "description": "Stress values in megapascals (MPa) in the same point order as strain.",
+          "minItems": 2,
+          "items": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "notes": {
+      "type": "string",
+      "description": "Additional information about the reinforcement material."
+    }
+  }
+}
