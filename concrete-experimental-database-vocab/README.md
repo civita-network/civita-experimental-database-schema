@@ -4,6 +4,8 @@ This folder contains the JSON files used by the Concrete Grand Challenge Experim
 
 The JSON files in this folder are the authoritative source for permitted terms used across the Excel data collection template, JSON validation schemas, LaTeX documentation, example submissions, and contributor-facing webform. Some files only define controlled vocabulary terms, whereas others also include parametrization schemas for selected terms.
 
+The `source_type` vocabulary is shared with the Computational Database and maintained in [the common CIVITA specifications](https://github.com/civita-network/civita-schema/blob/main/source_types.json).
+
 ## Purpose
 
 Controlled vocabularies provide standardized terms for database fields that would otherwise be difficult to interpret consistently across contributors, laboratories, publications, and experimental traditions.
@@ -35,7 +37,6 @@ vocab/
 This folder may include files such as:
 
 ```text
-source_types.json
 material_classes.json
 cement_types.json
 aggregate_types.json
@@ -105,7 +106,7 @@ Terms with an available parametrization should use:
 
 ## Relationship to the Excel template
 
-The Excel data collection template uses the JSON files in this folder to define allowed values for selected fields. These fields may appear as dropdown menus, validation lists, or documented allowable entries.
+The Excel data collection template uses the JSON files in this folder and the shared source types vocabulary to define allowed values for selected fields. These fields may appear as dropdown menus, validation lists, or documented allowable entries.
 
 When a vocabulary or registry file is updated, the corresponding spreadsheet fields should be reviewed and updated if needed.
 
@@ -144,6 +145,8 @@ validation_schemas/
 ```
 
 should enforce the controlled terms defined in this folder whenever a field is restricted to a prescribed set of values.
+
+For `source_type`, follow the [shared literature source validation instructions](https://github.com/civita-network/civita-schema#validate-literature-source-records).
 
 For registry files that include parametrization schemas, validation should proceed in two stages:
 
